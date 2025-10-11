@@ -53,9 +53,9 @@ This repository serves as a comprehensive record of my participation in the prog
 
 ## Resources
 
-- [Karel documentation website](https://compedu.stanford.edu/karel-reader/docs/python/en/intro.html)
+- [Karel Documentation Website](https://compedu.stanford.edu/karel-reader/docs/python/en/intro.html)
 - [Python](https://codeinplace2021.github.io/pythonreader/en/intro/)
-- [Practical Python](https://practical.learnpython.dev/) 
+- [Stanford Engineering Article ](https://engineering.stanford.edu/news/stanfords-code-place-introductory-programming-course-offers-new-model-large-scale-interactive) 
 
 ---
 
