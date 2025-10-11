@@ -1,3 +1,16 @@
+<!-- # Code-In-Place-By-Stanford-University
+
+Karel Codes and Code In Place 2023 Solutions -->
+
+<p align="center">
+  <a href="https://media.licdn.com/dms/image/v2/D4E3DAQFMwNLS6vkkNw/image-scale_191_1128/image-scale_191_1128/0/1678396555746/stanford_code_in_place_cover?e=2147483647&v=beta&t=MeLC_mij1esP44G5dWB4cYuuCQP55vNsNUeuMJw7uGA">
+    <img width="200px" src="https://media.licdn.com/dms/image/v2/D4E3DAQFMwNLS6vkkNw/image-scale_191_1128/image-scale_191_1128/0/1678396555746/stanford_code_in_place_cover?e=2147483647&v=beta&t=MeLC_mij1esP44G5dWB4cYuuCQP55vNsNUeuMJw7uGA" alt="Logo">
+  </a>
+  <h3 align="center">Code in Place 2023 and Karel Solutions</h3>  
+  <p align="center">
+  </p>
+</p>
+
 # Stanford Code in Place – Python Programming Repository
 
 ## Overview
@@ -47,6 +60,14 @@ This repository serves as a comprehensive record of my participation in the prog
 - [Practical Python](https://practical.learnpython.dev/) 
 
 ---
+
+```
+
+### README
+```
+✔️ If you think this repository has helped you learn something new you can give a star ⭐   
+❌ If not, point out 'why' and spam the issue section 🚩   
+`` 
 
 ## Getting Started
 To explore or run the projects:
