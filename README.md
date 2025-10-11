@@ -1,14 +1,12 @@
-<!-- # Code-In-Place-By-Stanford-University
-
-Karel Codes and Code In Place 2023 Solutions -->
-
 <p align="center">
   <a href="https://media.licdn.com/dms/image/v2/D4E3DAQFMwNLS6vkkNw/image-scale_191_1128/image-scale_191_1128/0/1678396555746/stanford_code_in_place_cover?e=2147483647&v=beta&t=MeLC_mij1esP44G5dWB4cYuuCQP55vNsNUeuMJw7uGA">
-    <img width="200px" src="https://media.licdn.com/dms/image/v2/D4E3DAQFMwNLS6vkkNw/image-scale_191_1128/image-scale_191_1128/0/1678396555746/stanford_code_in_place_cover?e=2147483647&v=beta&t=MeLC_mij1esP44G5dWB4cYuuCQP55vNsNUeuMJw7uGA" alt="Logo">
+    <img 
+      src="https://media.licdn.com/dms/image/v2/D4E3DAQFMwNLS6vkkNw/image-scale_191_1128/image-scale_191_1128/0/1678396555746/stanford_code_in_place_cover?e=2147483647&v=beta&t=MeLC_mij1esP44G5dWB4cYuuCQP55vNsNUeuMJw7uGA" 
+      alt="Logo" 
+      style="width:100%; height:auto; border-radius:10px;"
+    >
   </a>
   <h3 align="center">Code in Place 2023 and Karel Solutions</h3>  
-  <p align="center">
-  </p>
 </p>
 
 # Stanford Code in Place – Python Programming Repository
