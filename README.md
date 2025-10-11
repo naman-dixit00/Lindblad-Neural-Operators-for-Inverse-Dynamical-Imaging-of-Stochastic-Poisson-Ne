@@ -63,8 +63,8 @@ This repository serves as a comprehensive record of my participation in the prog
 
 ### README
 ```
-✔️ If you think this repository has helped you learn something new you can give a star ⭐   
-❌ If not, point out 'why' and spam the issue section 🚩   
+- If you think this repository has helped you learn something new you can give a star ⭐   
+- If not, point out 'why' and spam the issue section    
 `` 
 
 ## Getting Started
