@@ -26,6 +26,27 @@ By completing the Code in Place program, I have achieved:
 This repository serves as a comprehensive record of my participation in the program, demonstrating both learning progression and applied programming skills. It can be used as a reference for future projects, a showcase of foundational Python expertise, and a resource for others learning to code.
 
 ---
+## Setup
+
+```bash
+> python3.9 --version # Python 3.9.0
+
+# Create a Virtual Environment
+> cd code_in_place
+> python3 -m venv env
+> source env/bin/activate
+
+# deactivate the virtual environment
+> deactivate
+```
+
+## Resources
+
+- [Karel documentation website](https://compedu.stanford.edu/karel-reader/docs/python/en/intro.html)
+- [Python](https://codeinplace2021.github.io/pythonreader/en/intro/)
+- [Practical Python](https://practical.learnpython.dev/) 
+
+---
 
 ## Getting Started
 To explore or run the projects:
