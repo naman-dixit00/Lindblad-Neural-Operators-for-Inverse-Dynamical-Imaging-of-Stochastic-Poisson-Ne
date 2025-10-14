@@ -9,8 +9,8 @@
   <h3 align="center">Code in Place 2024 and Karel Solutions</h3>  
 </p>
 
-*Image courtesy of Stanford Code in Place / LinkedIn*  
-Source: [LinkedIn — Stanford Code in Place](https://www.linkedin.com/company/stanford-university-code-in-place) 
+ <h4 align="center">*Image courtesy of Stanford Code in Place / LinkedIn*  
+Source: [LinkedIn — Stanford Code in Place](https://www.linkedin.com/company/stanford-university-code-in-place) </h4>
 # Stanford Code in Place – Python Programming Repository
 
 ## Overview
