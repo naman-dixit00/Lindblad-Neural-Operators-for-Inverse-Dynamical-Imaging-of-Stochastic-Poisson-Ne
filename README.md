@@ -77,7 +77,5 @@ To explore or run the projects:
 
 ---
 
-- ![Stanford Code in Place Cover](https://media.licdn.com/dms/image/v2/D4E3DAQFMwNLS6vkkNw/image-scale_191_1128/image-scale_191_1128/0/1678396555746/stanford_code_in_place_cover?e=2147483647&v=beta&t=MeLC_mij1esP44G5dWB4cYuuCQP55vNsNUeuMJw7uGA)  
-
 *Image courtesy of Stanford Code in Place / LinkedIn*  
-Source: [LinkedIn — Stanford Code in Place](https://www.linkedin.com/company/stanford-university-code-in-place) :contentReference[oaicite:0]{index=0}
+Source: [LinkedIn — Stanford Code in Place](https://www.linkedin.com/company/stanford-university-code-in-place) 
