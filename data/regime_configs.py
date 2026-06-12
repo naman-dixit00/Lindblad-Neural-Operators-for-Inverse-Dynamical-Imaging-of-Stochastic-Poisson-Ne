@@ -1,0 +1,32 @@
+"""
+Multi-Regime Physics Configurations Registry.
+Enforces modular reproducible testing profiles across distinct physical zones.
+"""
+
+REGIMES = {
+    "low_noise": {
+        "noise": 0.02,
+        "gamma": 0.01,
+        "description": "Clean classical continuous deterministic electrodiffusive transport"
+    },
+    "stochastic": {
+        "noise": 0.45,
+        "gamma": 0.05,
+        "description": "Thermal fluctuations dominated active molecular ion transport"
+    },
+    "heavy_dissipation": {
+        "noise": 0.15,
+        "gamma": 0.35,
+        "description": "Strong open-system environmental coupling and damping activation"
+    },
+    "collapse": {
+        "noise": 0.65,
+        "gamma": 0.50,
+        "description": "High gradient critical system breakdowns and bottleneck localizations"
+    },
+    "metastable": {
+        "noise": 0.30,
+        "gamma": 0.15,
+        "description": "Dynamic multi-attractor state hopping under non-equilibrium states"
+    }
+}
