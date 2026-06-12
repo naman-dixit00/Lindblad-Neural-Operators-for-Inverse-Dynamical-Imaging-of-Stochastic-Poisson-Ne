@@ -1,0 +1,9 @@
+{
+  "raw_dir": "data/raw",
+  "processed_dir": "data/processed",
+  "splits_dir": "dataset",
+  "trajectories_per_regime": 60,
+  "train_ratio": 0.8,
+  "val_ratio": 0.1,
+  "test_ratio": 0.1
+}
