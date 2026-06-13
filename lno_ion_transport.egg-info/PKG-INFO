@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: lno_ion_transport
+Version: 0.1.0
+Summary: Lindblad Neural Operators for Nanoscale Imaging of Dissipative Ion Transport in Neuronal Systems
+Author: Yuánlǐ AI Research Laboratory
+Requires-Python: >=3.9
+Requires-Dist: torch>=2.0.0
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: scipy>=1.10.0
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: matplotlib>=3.7.0
+Requires-Dist: tqdm>=4.65.0
+Requires-Dist: h5py>=3.8.0
+Requires-Dist: scikit-learn>=1.2.0
