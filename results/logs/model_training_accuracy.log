@@ -1,0 +1,1472 @@
+dataset_config.json  regimes.json  statistics.json
+dissipation.npy  flux.npy   instability.npy  phi.npy	   state_t.npy
+entropy.npy	 gamma.npy  noise.npy	     state_t1.npy
+[+] Initializing Yuánlǐ AI LNO-IonTransport Training Orchestrator...
+[+] Operational Compute Target Selected: Dedicated [CPU] Hardware Engine.
+[+] Configuring Structured Dataset Multi-Channel Streams...
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:424: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  self.check_worker_number_rationality()
+[+] Initializing Neural Operator Target Architecture: LindbladNeuralOperator...
+Traceback (most recent call last):
+  File "/content/training/train.py", line 116, in <module>
+    main()
+  File "/content/training/train.py", line 59, in main
+    model = LindbladNeuralOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: LindbladNeuralOperator.__init__() got an unexpected keyword argument 'out_channels'
+[+] Initializing Yuánlǐ AI LNO-IonTransport Training Orchestrator...
+[+] Operational Compute Target Selected: Dedicated [CPU] Hardware Engine.
+[+] Configuring Structured Dataset Multi-Channel Streams...
+[+] Initializing Neural Operator Target Architecture: LindbladNeuralOperator...
+Traceback (most recent call last):
+  File "/content/training/train.py", line 121, in <module>
+    main()
+  File "/content/training/train.py", line 66, in main
+    model = LindbladNeuralOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: LindbladNeuralOperator.__init__() got an unexpected keyword argument 'hidden_dim'
+[+] Initializing Yuánlǐ AI LNO-IonTransport Training Orchestrator...
+[+] Operational Compute Target Selected: Dedicated [CPU] Hardware Engine.
+[+] Configuring Structured Dataset Multi-Channel Streams...
+[+] Initializing Neural Operator Target Architecture: LindbladNeuralOperator...
+[+] Training Convergence Cycle Triggered across 150 Scientific Iterations.
+
+[Training Batch Step]:   0% 0/750 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/content/training/train.py", line 119, in <module>
+    main()
+  File "/content/training/train.py", line 93, in main
+    train_loss, logs = trainer.train_epoch(train_loader)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/training/trainer_lno.py", line 24, in train_epoch
+    state_t = batch["state_t"].to(self.device)
+              ~~~~~^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+[+] Dataset Sample Type: <class 'tuple'>
+[+] Total Elements in Sample: 2
+    -> Element [0] Shape: torch.Size([6, 128])
+    -> Element [1] Shape: torch.Size([128])
+[+] Initializing Yuánlǐ AI LNO-IonTransport Training Orchestrator...
+[+] Operational Compute Target Selected: Dedicated [CPU] Hardware Engine.
+[+] Configuring Structured Dataset Multi-Channel Streams...
+[+] Initializing Neural Operator Target Architecture: LindbladNeuralOperator...
+[+] Training Convergence Cycle Triggered across 150 Scientific Iterations.
+
+Traceback (most recent call last):
+  File "/content/training/train.py", line 119, in <module>
+    main()
+  File "/content/training/train.py", line 93, in main
+    train_loss, logs = trainer.train_epoch(train_loader)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/training/trainer_lno.py", line 39, in train_epoch
+    outputs = self.model(inputs)
+              ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: LindbladNeuralOperator.forward() missing 5 required positional arguments: 'phi', 'flux', 'noise', 'dissipation', and 'gamma'
+Traceback (most recent call last):
+  File "/content/training/train.py", line 16, in <module>
+    from training.trainer_lno import LNOTrainer
+  File "/content/training/trainer_lno.py", line 5
+    import torch|
+                ^
+SyntaxError: invalid syntax
+[+] Initializing Yuánlǐ AI LNO-IonTransport Training Orchestrator...
+[+] Operational Compute Target Selected: Dedicated [CPU] Hardware Engine.
+[+] Configuring Structured Dataset Multi-Channel Streams...
+[+] Initializing Neural Operator Target Architecture: LindbladNeuralOperator...
+[+] Training Convergence Cycle Triggered across 150 Scientific Iterations.
+
+Traceback (most recent call last):
+  File "/content/training/train.py", line 119, in <module>
+    main()
+  File "/content/training/train.py", line 93, in main
+    train_loss, logs = trainer.train_epoch(train_loader)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/training/trainer_lno.py", line 42, in train_epoch
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/models/lno_model.py", line 76, in forward
+    x = self.input_projection(x)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (4096x6 and 4x64)
+[+] Initializing Yuánlǐ AI LNO-IonTransport Training Orchestrator...
+[+] Operational Compute Target Selected: Dedicated [CPU] Hardware Engine.
+[+] Configuring Structured Dataset Multi-Channel Streams...
+[+] Initializing Neural Operator Target Architecture: LindbladNeuralOperator...
+[+] Training Convergence Cycle Triggered across 150 Scientific Iterations.
+
+Traceback (most recent call last):
+  File "/content/training/trainer_lno.py", line 53, in train_epoch
+    loss = self.criterion(outputs, targets)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: TotalLNOLoss.forward() missing 4 required positional arguments: 'state_t', 'flux', 'noise', and 'gamma'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/content/training/train.py", line 122, in <module>
+    main()
+  File "/content/training/train.py", line 93, in main
+    train_loss, logs = trainer.train_epoch(train_loader)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/training/trainer_lno.py", line 56, in train_epoch
+    loss = self.criterion(outputs["next_state"], targets)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: TotalLNOLoss.forward() missing 4 required positional arguments: 'state_t', 'flux', 'noise', and 'gamma'
+[+] Inspected TotalLNOLoss Forward Source Code:
+
+    def forward(self, pred: torch.Tensor, target: torch.Tensor, state_t: torch.Tensor,
+                flux: torch.Tensor, noise: torch.Tensor, gamma: torch.Tensor) -> tuple:
+
+        loss_recon = self.recon(pred, target)
+        loss_diss = self.diss(state_t, pred)
+        loss_entropy = self.entropy(pred, target)
+        loss_spectral = self.spectral(pred)
+        loss_residual = self.residual(state_t, pred, flux, noise, gamma)
+
+        total_loss = (loss_recon + loss_diss + loss_entropy + loss_spectral + loss_residual)
+
+        logs = {
+            "total": total_loss.item(),
+            "recon": loss_recon.item(),
+            "diss": loss_diss.item(),
+            "entropy": loss_entropy.item(),
+            "spectral": loss_spectral.item(),
+            "residual": loss_residual.item()
+        }
+        return total_loss, logs
+
+[+] Initiating dynamic Train/Val partition (8% validation split)...
+ -> state_t.npy: Scaled Train to 22000 | Populated Val with 2000
+ -> state_t1.npy: Scaled Train to 22000 | Populated Val with 2000
+ -> phi.npy: Scaled Train to 22000 | Populated Val with 2000
+ -> flux.npy: Scaled Train to 22000 | Populated Val with 2000
+ -> noise.npy: Scaled Train to 22000 | Populated Val with 2000
+ -> dissipation.npy: Scaled Train to 22000 | Populated Val with 2000
+ -> entropy.npy: Scaled Train to 22000 | Populated Val with 2000
+ -> instability.npy: Scaled Train to 22000 | Populated Val with 2000
+
+[+] Data splitting completed successfully! System ready for execution.
+<>:19: SyntaxWarning: invalid escape sequence '\p'
+<>:19: SyntaxWarning: invalid escape sequence '\p'
+/tmp/ipykernel_2526/3717439775.py:19: SyntaxWarning: invalid escape sequence '\p'
+  Evaluates conformity to: \partial_t c + \nabla \cdot J = \eta - \gamma c
+UsageError: Line magic function `%%writefile` not found.
+[+] Initializing Yuánlǐ AI LNO-IonTransport Training Orchestrator...
+[+] Operational Compute Target Selected: Dedicated [CUDA] Hardware Engine.
+[+] Configuring Structured Dataset Multi-Channel Streams...
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:424: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  self.check_worker_number_rationality()
+[+] Initializing Neural Operator Target Architecture: LindbladNeuralOperator...
+[+] Training Convergence Cycle Triggered across 150 Scientific Iterations.
+
+[Training Batch Step]:   0% 0/600 [00:00<?, ?it/s]/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:432: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  self.check_worker_number_rationality()
+================================================================================
+Scientific Cycle: [1 / 150]
+Aggregated Regularization Training Loss     : 709.759754
+Aggregated Validation Tracking Loss         : 4.320568
+Continuous Physical Component Metrics Logs  : {'running_loss': 709.7597543680668, 'avg_total_loss': 709.7597543680668, 'avg_recon_loss': 0.003554430127727149, 'avg_physics_loss': 3548.780918958982}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 4.320568)
+================================================================================
+Scientific Cycle: [2 / 150]
+Aggregated Regularization Training Loss     : 6.098623
+Aggregated Validation Tracking Loss         : 8.404043
+Continuous Physical Component Metrics Logs  : {'running_loss': 6.098622736334801, 'avg_total_loss': 6.098622736334801, 'avg_recon_loss': 3.198512068820491e-05, 'avg_physics_loss': 30.49295331319173}
+================================================================================
+================================================================================
+Scientific Cycle: [3 / 150]
+Aggregated Regularization Training Loss     : 14.917656
+Aggregated Validation Tracking Loss         : 4.225758
+Continuous Physical Component Metrics Logs  : {'running_loss': 14.917656073967615, 'avg_total_loss': 14.917656073967615, 'avg_recon_loss': 7.624392998650364e-05, 'avg_physics_loss': 74.58789763967197}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 4.225758)
+================================================================================
+Scientific Cycle: [4 / 150]
+Aggregated Regularization Training Loss     : 0.782762
+Aggregated Validation Tracking Loss         : 0.972711
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.7827620497097572, 'avg_total_loss': 0.7827620497097572, 'avg_recon_loss': 5.4252392264212786e-06, 'avg_physics_loss': 3.9137830617030462}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.972711)
+================================================================================
+Scientific Cycle: [5 / 150]
+Aggregated Regularization Training Loss     : 8.901858
+Aggregated Validation Tracking Loss         : 1.735613
+Continuous Physical Component Metrics Logs  : {'running_loss': 8.90185807098945, 'avg_total_loss': 8.90185807098945, 'avg_recon_loss': 4.608568755240109e-05, 'avg_physics_loss': 44.50905924618244}
+================================================================================
+================================================================================
+Scientific Cycle: [6 / 150]
+Aggregated Regularization Training Loss     : 18.078903
+Aggregated Validation Tracking Loss         : 2.250135
+Continuous Physical Component Metrics Logs  : {'running_loss': 18.07890294539432, 'avg_total_loss': 18.07890294539432, 'avg_recon_loss': 9.203685263571515e-05, 'avg_physics_loss': 90.39405254244804}
+================================================================================
+================================================================================
+Scientific Cycle: [7 / 150]
+Aggregated Regularization Training Loss     : 1.410701
+Aggregated Validation Tracking Loss         : 0.702073
+Continuous Physical Component Metrics Logs  : {'running_loss': 1.4107010965545972, 'avg_total_loss': 1.4107010965545972, 'avg_recon_loss': 8.549114080172633e-06, 'avg_physics_loss': 7.053462644318739}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.702073)
+================================================================================
+Scientific Cycle: [8 / 150]
+Aggregated Regularization Training Loss     : 16.951208
+Aggregated Validation Tracking Loss         : 0.264924
+Continuous Physical Component Metrics Logs  : {'running_loss': 16.95120808087289, 'avg_total_loss': 16.95120808087289, 'avg_recon_loss': 8.642751029469764e-05, 'avg_physics_loss': 84.75560617844263}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.264924)
+================================================================================
+Scientific Cycle: [9 / 150]
+Aggregated Regularization Training Loss     : 6.506178
+Aggregated Validation Tracking Loss         : 2.821450
+Continuous Physical Component Metrics Logs  : {'running_loss': 6.50617754260699, 'avg_total_loss': 6.50617754260699, 'avg_recon_loss': 3.4136801125820664e-05, 'avg_physics_loss': 32.53071660459042}
+================================================================================
+================================================================================
+Scientific Cycle: [10 / 150]
+Aggregated Regularization Training Loss     : 10.125550
+Aggregated Validation Tracking Loss         : 1.111813
+Continuous Physical Component Metrics Logs  : {'running_loss': 10.125550184572736, 'avg_total_loss': 10.125550184572736, 'avg_recon_loss': 5.224811458523012e-05, 'avg_physics_loss': 50.62748867829641}
+================================================================================
+================================================================================
+Scientific Cycle: [11 / 150]
+Aggregated Regularization Training Loss     : 0.923789
+Aggregated Validation Tracking Loss         : 0.977517
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.9237888325875004, 'avg_total_loss': 0.9237888325875004, 'avg_recon_loss': 6.114139012349066e-06, 'avg_physics_loss': 4.618913499514262}
+================================================================================
+================================================================================
+Scientific Cycle: [12 / 150]
+Aggregated Regularization Training Loss     : 4.242792
+Aggregated Validation Tracking Loss         : 2.540005
+Continuous Physical Component Metrics Logs  : {'running_loss': 4.242792317345739, 'avg_total_loss': 4.242792317345739, 'avg_recon_loss': 2.274981704848263e-05, 'avg_physics_loss': 21.213847467203934}
+================================================================================
+================================================================================
+Scientific Cycle: [13 / 150]
+Aggregated Regularization Training Loss     : 9.623758
+Aggregated Validation Tracking Loss         : 0.939247
+Continuous Physical Component Metrics Logs  : {'running_loss': 9.623758367449046, 'avg_total_loss': 9.623758367449046, 'avg_recon_loss': 4.971524847595295e-05, 'avg_physics_loss': 48.11854231307904}
+================================================================================
+================================================================================
+Scientific Cycle: [14 / 150]
+Aggregated Regularization Training Loss     : 1.844426
+Aggregated Validation Tracking Loss         : 10.820316
+Continuous Physical Component Metrics Logs  : {'running_loss': 1.844425609993438, 'avg_total_loss': 1.844425609993438, 'avg_recon_loss': 1.072241081374159e-05, 'avg_physics_loss': 9.222074287881453}
+================================================================================
+================================================================================
+Scientific Cycle: [15 / 150]
+Aggregated Regularization Training Loss     : 10.517632
+Aggregated Validation Tracking Loss         : 0.167295
+Continuous Physical Component Metrics Logs  : {'running_loss': 10.517631684231262, 'avg_total_loss': 10.517631684231262, 'avg_recon_loss': 5.41671204996419e-05, 'avg_physics_loss': 52.58788661514719}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.167295)
+================================================================================
+Scientific Cycle: [16 / 150]
+Aggregated Regularization Training Loss     : 0.538808
+Aggregated Validation Tracking Loss         : 0.448136
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.538807970713824, 'avg_total_loss': 0.538807970713824, 'avg_recon_loss': 4.178007677637652e-06, 'avg_physics_loss': 2.6940189189712207}
+================================================================================
+================================================================================
+Scientific Cycle: [17 / 150]
+Aggregated Regularization Training Loss     : 8.086360
+Aggregated Validation Tracking Loss         : 0.332572
+Continuous Physical Component Metrics Logs  : {'running_loss': 8.086359754477938, 'avg_total_loss': 8.086359754477938, 'avg_recon_loss': 4.19947200871699e-05, 'avg_physics_loss': 40.431588055292764}
+================================================================================
+================================================================================
+Scientific Cycle: [18 / 150]
+Aggregated Regularization Training Loss     : 0.532029
+Aggregated Validation Tracking Loss         : 18.482975
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.5320294439792633, 'avg_total_loss': 0.5320294439792633, 'avg_recon_loss': 4.155783963521268e-06, 'avg_physics_loss': 2.660126401980718}
+================================================================================
+================================================================================
+Scientific Cycle: [19 / 150]
+Aggregated Regularization Training Loss     : 2.150800
+Aggregated Validation Tracking Loss         : 21.022142
+Continuous Physical Component Metrics Logs  : {'running_loss': 2.150800019154946, 'avg_total_loss': 2.150800019154946, 'avg_recon_loss': 1.2228320461910394e-05, 'avg_physics_loss': 10.753938795725505}
+================================================================================
+================================================================================
+Scientific Cycle: [20 / 150]
+Aggregated Regularization Training Loss     : 489.334438
+Aggregated Validation Tracking Loss         : 6.472204
+Continuous Physical Component Metrics Logs  : {'running_loss': 489.33443766117097, 'avg_total_loss': 489.33443766117097, 'avg_recon_loss': 0.0024513526628804055, 'avg_physics_loss': 2446.659897251129}
+================================================================================
+================================================================================
+Scientific Cycle: [21 / 150]
+Aggregated Regularization Training Loss     : 4.670544
+Aggregated Validation Tracking Loss         : 3.567061
+Continuous Physical Component Metrics Logs  : {'running_loss': 4.6705435105164845, 'avg_total_loss': 4.6705435105164845, 'avg_recon_loss': 2.4769967568924283e-05, 'avg_physics_loss': 23.352593291600545}
+================================================================================
+================================================================================
+Scientific Cycle: [22 / 150]
+Aggregated Regularization Training Loss     : 2.720538
+Aggregated Validation Tracking Loss         : 2.223466
+Continuous Physical Component Metrics Logs  : {'running_loss': 2.720537681480249, 'avg_total_loss': 2.720537681480249, 'avg_recon_loss': 1.5041572936146016e-05, 'avg_physics_loss': 13.602612980206807}
+================================================================================
+================================================================================
+Scientific Cycle: [23 / 150]
+Aggregated Regularization Training Loss     : 6.434913
+Aggregated Validation Tracking Loss         : 2.495347
+Continuous Physical Component Metrics Logs  : {'running_loss': 6.4349133059382435, 'avg_total_loss': 6.4349133059382435, 'avg_recon_loss': 3.368870877845135e-05, 'avg_physics_loss': 32.17439748922984}
+================================================================================
+================================================================================
+Scientific Cycle: [24 / 150]
+Aggregated Regularization Training Loss     : 3.769237
+Aggregated Validation Tracking Loss         : 1.285920
+Continuous Physical Component Metrics Logs  : {'running_loss': 3.769236541191737, 'avg_total_loss': 3.769236541191737, 'avg_recon_loss': 2.0354928794859005e-05, 'avg_physics_loss': 18.846080552339554}
+================================================================================
+================================================================================
+Scientific Cycle: [25 / 150]
+Aggregated Regularization Training Loss     : 4.558506
+Aggregated Validation Tracking Loss         : 1.229963
+Continuous Physical Component Metrics Logs  : {'running_loss': 4.558505927920342, 'avg_total_loss': 4.558505927920342, 'avg_recon_loss': 2.4310023012124777e-05, 'avg_physics_loss': 22.792407555182773}
+================================================================================
+================================================================================
+Scientific Cycle: [26 / 150]
+Aggregated Regularization Training Loss     : 10.069229
+Aggregated Validation Tracking Loss         : 0.850750
+Continuous Physical Component Metrics Logs  : {'running_loss': 10.069228671540817, 'avg_total_loss': 10.069228671540817, 'avg_recon_loss': 5.1934705655867216e-05, 'avg_physics_loss': 50.34588266332944}
+================================================================================
+================================================================================
+Scientific Cycle: [27 / 150]
+Aggregated Regularization Training Loss     : 2.111592
+Aggregated Validation Tracking Loss         : 0.836567
+Continuous Physical Component Metrics Logs  : {'running_loss': 2.1115923329194386, 'avg_total_loss': 2.1115923329194386, 'avg_recon_loss': 1.2087889926988282e-05, 'avg_physics_loss': 10.557901029785475}
+================================================================================
+================================================================================
+Scientific Cycle: [28 / 150]
+Aggregated Regularization Training Loss     : 11.552037
+Aggregated Validation Tracking Loss         : 0.707562
+Continuous Physical Component Metrics Logs  : {'running_loss': 11.552036551833153, 'avg_total_loss': 11.552036551833153, 'avg_recon_loss': 5.939082209655074e-05, 'avg_physics_loss': 57.75988459030787}
+================================================================================
+================================================================================
+Scientific Cycle: [29 / 150]
+Aggregated Regularization Training Loss     : 0.623592
+Aggregated Validation Tracking Loss         : 7.228981
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.6235922200481097, 'avg_total_loss': 0.6235922200481097, 'avg_recon_loss': 4.636423852844018e-06, 'avg_physics_loss': 3.117937864661217}
+================================================================================
+================================================================================
+Scientific Cycle: [30 / 150]
+Aggregated Regularization Training Loss     : 7.286874
+Aggregated Validation Tracking Loss         : 0.348469
+Continuous Physical Component Metrics Logs  : {'running_loss': 7.286873973558347, 'avg_total_loss': 7.286873973558347, 'avg_recon_loss': 3.8010971979171395e-05, 'avg_physics_loss': 36.43417915761471}
+================================================================================
+================================================================================
+Scientific Cycle: [31 / 150]
+Aggregated Regularization Training Loss     : 2.102409
+Aggregated Validation Tracking Loss         : 0.322070
+Continuous Physical Component Metrics Logs  : {'running_loss': 2.102408555050691, 'avg_total_loss': 2.102408555050691, 'avg_recon_loss': 1.2048921870852306e-05, 'avg_physics_loss': 10.511982354323068}
+================================================================================
+================================================================================
+Scientific Cycle: [32 / 150]
+Aggregated Regularization Training Loss     : 4.672365
+Aggregated Validation Tracking Loss         : 0.529604
+Continuous Physical Component Metrics Logs  : {'running_loss': 4.672364725793401, 'avg_total_loss': 4.672364725793401, 'avg_recon_loss': 2.4927947609209393e-05, 'avg_physics_loss': 23.361698769629}
+================================================================================
+================================================================================
+Scientific Cycle: [33 / 150]
+Aggregated Regularization Training Loss     : 1.308449
+Aggregated Validation Tracking Loss         : 0.779134
+Continuous Physical Component Metrics Logs  : {'running_loss': 1.308448706517617, 'avg_total_loss': 1.308448706517617, 'avg_recon_loss': 8.059229014444705e-06, 'avg_physics_loss': 6.542203133702278}
+================================================================================
+================================================================================
+Scientific Cycle: [34 / 150]
+Aggregated Regularization Training Loss     : 4.182432
+Aggregated Validation Tracking Loss         : 0.381045
+Continuous Physical Component Metrics Logs  : {'running_loss': 4.182432252168655, 'avg_total_loss': 4.182432252168655, 'avg_recon_loss': 2.2431921352676908e-05, 'avg_physics_loss': 20.912048700849216}
+================================================================================
+================================================================================
+Scientific Cycle: [35 / 150]
+Aggregated Regularization Training Loss     : 4.003440
+Aggregated Validation Tracking Loss         : 0.254205
+Continuous Physical Component Metrics Logs  : {'running_loss': 4.003440017215907, 'avg_total_loss': 4.003440017215907, 'avg_recon_loss': 2.154365174230103e-05, 'avg_physics_loss': 20.01709214270115}
+================================================================================
+================================================================================
+Scientific Cycle: [36 / 150]
+Aggregated Regularization Training Loss     : 2.109308
+Aggregated Validation Tracking Loss         : 1.233532
+Continuous Physical Component Metrics Logs  : {'running_loss': 2.1093079791218043, 'avg_total_loss': 2.1093079791218043, 'avg_recon_loss': 1.2057332753367215e-05, 'avg_physics_loss': 10.54647943576177}
+================================================================================
+================================================================================
+Scientific Cycle: [37 / 150]
+Aggregated Regularization Training Loss     : 2.065146
+Aggregated Validation Tracking Loss         : 3.798626
+Continuous Physical Component Metrics Logs  : {'running_loss': 2.065146180093288, 'avg_total_loss': 2.065146180093288, 'avg_recon_loss': 1.1840096609603279e-05, 'avg_physics_loss': 10.325671545068422}
+================================================================================
+================================================================================
+Scientific Cycle: [38 / 150]
+Aggregated Regularization Training Loss     : 7.332960
+Aggregated Validation Tracking Loss         : 0.471264
+Continuous Physical Component Metrics Logs  : {'running_loss': 7.332959614023566, 'avg_total_loss': 7.332959614023566, 'avg_recon_loss': 3.8212684213855637e-05, 'avg_physics_loss': 36.664606510599455}
+================================================================================
+================================================================================
+Scientific Cycle: [39 / 150]
+Aggregated Regularization Training Loss     : 3.953973
+Aggregated Validation Tracking Loss         : 0.288526
+Continuous Physical Component Metrics Logs  : {'running_loss': 3.9539726553484797, 'avg_total_loss': 3.9539726553484797, 'avg_recon_loss': 2.132704644793648e-05, 'avg_physics_loss': 19.769756505688033}
+================================================================================
+================================================================================
+Scientific Cycle: [40 / 150]
+Aggregated Regularization Training Loss     : 0.395927
+Aggregated Validation Tracking Loss         : 0.197662
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.39592724698285264, 'avg_total_loss': 0.39592724698285264, 'avg_recon_loss': 3.481775206826872e-06, 'avg_physics_loss': 1.9796187893549602}
+================================================================================
+================================================================================
+Scientific Cycle: [41 / 150]
+Aggregated Regularization Training Loss     : 3.128347
+Aggregated Validation Tracking Loss         : 1.997644
+Continuous Physical Component Metrics Logs  : {'running_loss': 3.128346896022558, 'avg_total_loss': 3.128346896022558, 'avg_recon_loss': 1.7165627808518973e-05, 'avg_physics_loss': 15.641648470014333}
+================================================================================
+================================================================================
+Scientific Cycle: [42 / 150]
+Aggregated Regularization Training Loss     : 0.599301
+Aggregated Validation Tracking Loss         : 4.109806
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.5993011573577921, 'avg_total_loss': 0.5993011573577921, 'avg_recon_loss': 4.487279270316927e-06, 'avg_physics_loss': 2.9964832956095537}
+================================================================================
+================================================================================
+Scientific Cycle: [43 / 150]
+Aggregated Regularization Training Loss     : 3.073588
+Aggregated Validation Tracking Loss         : 0.441865
+Continuous Physical Component Metrics Logs  : {'running_loss': 3.073588002435863, 'avg_total_loss': 3.073588002435863, 'avg_recon_loss': 1.6867024669788103e-05, 'avg_physics_loss': 15.367855368902285}
+================================================================================
+================================================================================
+Scientific Cycle: [44 / 150]
+Aggregated Regularization Training Loss     : 0.231942
+Aggregated Validation Tracking Loss         : 0.147820
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.23194158158575495, 'avg_total_loss': 0.23194158158575495, 'avg_recon_loss': 2.6418067735297274e-06, 'avg_physics_loss': 1.1596946780880293}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.147820)
+================================================================================
+Scientific Cycle: [45 / 150]
+Aggregated Regularization Training Loss     : 1.386133
+Aggregated Validation Tracking Loss         : 0.208112
+Continuous Physical Component Metrics Logs  : {'running_loss': 1.386133467964828, 'avg_total_loss': 1.386133467964828, 'avg_recon_loss': 8.424691419008923e-06, 'avg_physics_loss': 6.930625083744526}
+================================================================================
+================================================================================
+Scientific Cycle: [46 / 150]
+Aggregated Regularization Training Loss     : 2.911540
+Aggregated Validation Tracking Loss         : 0.291287
+Continuous Physical Component Metrics Logs  : {'running_loss': 2.9115396853908897, 'avg_total_loss': 2.9115396853908897, 'avg_recon_loss': 1.6059971507426477e-05, 'avg_physics_loss': 14.557617992311716}
+================================================================================
+================================================================================
+Scientific Cycle: [47 / 150]
+Aggregated Regularization Training Loss     : 1.134342
+Aggregated Validation Tracking Loss         : 11.977053
+Continuous Physical Component Metrics Logs  : {'running_loss': 1.1343415139553448, 'avg_total_loss': 1.1343415139553448, 'avg_recon_loss': 7.155417824454465e-06, 'avg_physics_loss': 5.671671708921592}
+================================================================================
+================================================================================
+Scientific Cycle: [48 / 150]
+Aggregated Regularization Training Loss     : 1.568989
+Aggregated Validation Tracking Loss         : 0.645020
+Continuous Physical Component Metrics Logs  : {'running_loss': 1.5689891115327677, 'avg_total_loss': 1.5689891115327677, 'avg_recon_loss': 9.347656038585229e-06, 'avg_physics_loss': 7.844898710226019}
+================================================================================
+================================================================================
+Scientific Cycle: [49 / 150]
+Aggregated Regularization Training Loss     : 0.893659
+Aggregated Validation Tracking Loss         : 0.288787
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.8936589520672957, 'avg_total_loss': 0.8936589520672957, 'avg_recon_loss': 5.9566601890045e-06, 'avg_physics_loss': 4.468264915471275}
+================================================================================
+================================================================================
+Scientific Cycle: [50 / 150]
+Aggregated Regularization Training Loss     : 2.870989
+Aggregated Validation Tracking Loss         : 0.211154
+Continuous Physical Component Metrics Logs  : {'running_loss': 2.870989117467155, 'avg_total_loss': 2.870989117467155, 'avg_recon_loss': 1.5864893306722176e-05, 'avg_physics_loss': 14.354865946273009}
+================================================================================
+================================================================================
+Scientific Cycle: [51 / 150]
+Aggregated Regularization Training Loss     : 0.884884
+Aggregated Validation Tracking Loss         : 0.361387
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.884883677487572, 'avg_total_loss': 0.884883677487572, 'avg_recon_loss': 5.900152736065441e-06, 'avg_physics_loss': 4.42438881640633}
+================================================================================
+================================================================================
+Scientific Cycle: [52 / 150]
+Aggregated Regularization Training Loss     : 1.037106
+Aggregated Validation Tracking Loss         : 3.473329
+Continuous Physical Component Metrics Logs  : {'running_loss': 1.037106366654237, 'avg_total_loss': 1.037106366654237, 'avg_recon_loss': 6.65906672888165e-06, 'avg_physics_loss': 5.18549846102794}
+================================================================================
+================================================================================
+Scientific Cycle: [53 / 150]
+Aggregated Regularization Training Loss     : 0.868501
+Aggregated Validation Tracking Loss         : 0.106868
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.8685008762093882, 'avg_total_loss': 0.8685008762093882, 'avg_recon_loss': 5.827809860837381e-06, 'avg_physics_loss': 4.342475170915326}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.106868)
+================================================================================
+Scientific Cycle: [54 / 150]
+Aggregated Regularization Training Loss     : 1.268143
+Aggregated Validation Tracking Loss         : 0.080810
+Continuous Physical Component Metrics Logs  : {'running_loss': 1.2681426130545637, 'avg_total_loss': 1.2681426130545637, 'avg_recon_loss': 7.829620269793243e-06, 'avg_physics_loss': 6.3406738254676265}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.080810)
+================================================================================
+Scientific Cycle: [55 / 150]
+Aggregated Regularization Training Loss     : 3.416890
+Aggregated Validation Tracking Loss         : 4.523311
+Continuous Physical Component Metrics Logs  : {'running_loss': 3.4168902462907136, 'avg_total_loss': 3.4168902462907136, 'avg_recon_loss': 1.8600636715575546e-05, 'avg_physics_loss': 17.084358006765445}
+================================================================================
+================================================================================
+Scientific Cycle: [56 / 150]
+Aggregated Regularization Training Loss     : 0.354270
+Aggregated Validation Tracking Loss         : 0.079547
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.35427038552239537, 'avg_total_loss': 0.35427038552239537, 'avg_recon_loss': 3.2329158030582524e-06, 'avg_physics_loss': 1.771335731893778}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.079547)
+================================================================================
+Scientific Cycle: [57 / 150]
+Aggregated Regularization Training Loss     : 0.315191
+Aggregated Validation Tracking Loss         : 0.076070
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.3151913877390325, 'avg_total_loss': 0.3151913877390325, 'avg_recon_loss': 3.0530814983838656e-06, 'avg_physics_loss': 1.5759416405608258}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.076070)
+================================================================================
+Scientific Cycle: [58 / 150]
+Aggregated Regularization Training Loss     : 0.886967
+Aggregated Validation Tracking Loss         : 0.051488
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.8869672265214225, 'avg_total_loss': 0.8869672265214225, 'avg_recon_loss': 5.916880494017581e-06, 'avg_physics_loss': 4.4348064767072595}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.051488)
+================================================================================
+Scientific Cycle: [59 / 150]
+Aggregated Regularization Training Loss     : 0.286044
+Aggregated Validation Tracking Loss         : 0.553955
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.28604406110942365, 'avg_total_loss': 0.28604406110942365, 'avg_recon_loss': 2.912187389749003e-06, 'avg_physics_loss': 1.430205718378226}
+================================================================================
+================================================================================
+Scientific Cycle: [60 / 150]
+Aggregated Regularization Training Loss     : 0.570381
+Aggregated Validation Tracking Loss         : 0.073249
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.5703808538367351, 'avg_total_loss': 0.5703808538367351, 'avg_recon_loss': 4.333221641843466e-06, 'avg_physics_loss': 2.8518825916697583}
+================================================================================
+================================================================================
+Scientific Cycle: [61 / 150]
+Aggregated Regularization Training Loss     : 1.207015
+Aggregated Validation Tracking Loss         : 0.063694
+Continuous Physical Component Metrics Logs  : {'running_loss': 1.2070148190731804, 'avg_total_loss': 1.2070148190731804, 'avg_recon_loss': 7.52068351592546e-06, 'avg_physics_loss': 6.035036383445064}
+================================================================================
+================================================================================
+Scientific Cycle: [62 / 150]
+Aggregated Regularization Training Loss     : 0.655569
+Aggregated Validation Tracking Loss         : 0.053853
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.6555685545379917, 'avg_total_loss': 0.6555685545379917, 'avg_recon_loss': 4.766112233198782e-06, 'avg_physics_loss': 3.277818864782651}
+================================================================================
+================================================================================
+Scientific Cycle: [63 / 150]
+Aggregated Regularization Training Loss     : 2.503139
+Aggregated Validation Tracking Loss         : 0.192739
+Continuous Physical Component Metrics Logs  : {'running_loss': 2.5031389648467304, 'avg_total_loss': 2.5031389648467304, 'avg_recon_loss': 1.4006645447845281e-05, 'avg_physics_loss': 12.515624516432483}
+================================================================================
+================================================================================
+Scientific Cycle: [64 / 150]
+Aggregated Regularization Training Loss     : 0.150956
+Aggregated Validation Tracking Loss         : 0.055375
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.15095558519785604, 'avg_total_loss': 0.15095558519785604, 'avg_recon_loss': 2.2346525204852695e-06, 'avg_physics_loss': 0.7547667410224677}
+================================================================================
+================================================================================
+Scientific Cycle: [65 / 150]
+Aggregated Regularization Training Loss     : 0.621229
+Aggregated Validation Tracking Loss         : 3.465061
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.6212286429603895, 'avg_total_loss': 0.6212286429603895, 'avg_recon_loss': 4.594141465095921e-06, 'avg_physics_loss': 3.1061201653132837}
+================================================================================
+================================================================================
+Scientific Cycle: [66 / 150]
+Aggregated Regularization Training Loss     : 0.949653
+Aggregated Validation Tracking Loss         : 0.076615
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.9496526325494051, 'avg_total_loss': 0.9496526325494051, 'avg_recon_loss': 6.234451120879688e-06, 'avg_physics_loss': 4.748231899713477}
+================================================================================
+================================================================================
+Scientific Cycle: [67 / 150]
+Aggregated Regularization Training Loss     : 0.091905
+Aggregated Validation Tracking Loss         : 0.114817
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.09190456012263894, 'avg_total_loss': 0.09190456012263894, 'avg_recon_loss': 1.9398185191713916e-06, 'avg_physics_loss': 0.4595130946735541}
+================================================================================
+================================================================================
+Scientific Cycle: [68 / 150]
+Aggregated Regularization Training Loss     : 0.325001
+Aggregated Validation Tracking Loss         : 0.086802
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.32500085527077316, 'avg_total_loss': 0.32500085527077316, 'avg_recon_loss': 3.1088600969534733e-06, 'avg_physics_loss': 1.6249886966248352}
+================================================================================
+================================================================================
+Scientific Cycle: [69 / 150]
+Aggregated Regularization Training Loss     : 0.827224
+Aggregated Validation Tracking Loss         : 0.189628
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.8272239487090458, 'avg_total_loss': 0.8272239487090458, 'avg_recon_loss': 5.627134733951304e-06, 'avg_physics_loss': 4.136091507151723}
+================================================================================
+================================================================================
+Scientific Cycle: [70 / 150]
+Aggregated Regularization Training Loss     : 0.351502
+Aggregated Validation Tracking Loss         : 0.912012
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.35150237288946906, 'avg_total_loss': 0.35150237288946906, 'avg_recon_loss': 3.2431722765598654e-06, 'avg_physics_loss': 1.7574956148614487}
+================================================================================
+================================================================================
+Scientific Cycle: [71 / 150]
+Aggregated Regularization Training Loss     : 0.193269
+Aggregated Validation Tracking Loss         : 0.337302
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.19326934912552438, 'avg_total_loss': 0.19326934912552438, 'avg_recon_loss': 2.4436355473748486e-06, 'avg_physics_loss': 0.9663345124075811}
+================================================================================
+================================================================================
+Scientific Cycle: [72 / 150]
+Aggregated Regularization Training Loss     : 0.470971
+Aggregated Validation Tracking Loss         : 0.123840
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.4709710449166596, 'avg_total_loss': 0.4709710449166596, 'avg_recon_loss': 3.836751232502896e-06, 'avg_physics_loss': 2.3548360084493956}
+================================================================================
+================================================================================
+Scientific Cycle: [73 / 150]
+Aggregated Regularization Training Loss     : 0.579890
+Aggregated Validation Tracking Loss         : 0.035506
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.5798897331953049, 'avg_total_loss': 0.5798897331953049, 'avg_recon_loss': 4.384225538937396e-06, 'avg_physics_loss': 2.8994267012178896}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.035506)
+================================================================================
+Scientific Cycle: [74 / 150]
+Aggregated Regularization Training Loss     : 0.117363
+Aggregated Validation Tracking Loss         : 0.066104
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.11736264000957211, 'avg_total_loss': 0.11736264000957211, 'avg_recon_loss': 2.069054980230097e-06, 'avg_physics_loss': 0.5868028458580374}
+================================================================================
+================================================================================
+Scientific Cycle: [75 / 150]
+Aggregated Regularization Training Loss     : 0.438608
+Aggregated Validation Tracking Loss         : 0.048690
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.43860832359020907, 'avg_total_loss': 0.43860832359020907, 'avg_recon_loss': 3.6779873573777877e-06, 'avg_physics_loss': 2.193023198470473}
+================================================================================
+================================================================================
+Scientific Cycle: [76 / 150]
+Aggregated Regularization Training Loss     : 0.512993
+Aggregated Validation Tracking Loss         : 0.077704
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.5129930659693976, 'avg_total_loss': 0.5129930659693976, 'avg_recon_loss': 4.04839317582173e-06, 'avg_physics_loss': 2.564945047299067}
+================================================================================
+================================================================================
+Scientific Cycle: [77 / 150]
+Aggregated Regularization Training Loss     : 1.595819
+Aggregated Validation Tracking Loss         : 0.043044
+Continuous Physical Component Metrics Logs  : {'running_loss': 1.5958187571385254, 'avg_total_loss': 1.5958187571385254, 'avg_recon_loss': 9.474249297719932e-06, 'avg_physics_loss': 7.979046359236042}
+================================================================================
+================================================================================
+Scientific Cycle: [78 / 150]
+Aggregated Regularization Training Loss     : 0.044333
+Aggregated Validation Tracking Loss         : 0.035721
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.0443330153170973, 'avg_total_loss': 0.0443330153170973, 'avg_recon_loss': 1.7009118831386634e-06, 'avg_physics_loss': 0.22165656790137292}
+================================================================================
+================================================================================
+Scientific Cycle: [79 / 150]
+Aggregated Regularization Training Loss     : 0.059148
+Aggregated Validation Tracking Loss         : 0.039204
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.05914772123098373, 'avg_total_loss': 0.05914772123098373, 'avg_recon_loss': 1.7754525364921392e-06, 'avg_physics_loss': 0.29572972358514865}
+================================================================================
+================================================================================
+Scientific Cycle: [80 / 150]
+Aggregated Regularization Training Loss     : 0.068630
+Aggregated Validation Tracking Loss         : 0.068949
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.06862955952373644, 'avg_total_loss': 0.06862955952373644, 'avg_recon_loss': 1.8249361095475555e-06, 'avg_physics_loss': 0.3431386668607593}
+================================================================================
+================================================================================
+Scientific Cycle: [81 / 150]
+Aggregated Regularization Training Loss     : 0.339761
+Aggregated Validation Tracking Loss         : 0.065447
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.33976132739335296, 'avg_total_loss': 0.33976132739335296, 'avg_recon_loss': 3.179429264908625e-06, 'avg_physics_loss': 1.698790712505579}
+================================================================================
+================================================================================
+Scientific Cycle: [82 / 150]
+Aggregated Regularization Training Loss     : 0.356782
+Aggregated Validation Tracking Loss         : 0.052509
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.3567822235729545, 'avg_total_loss': 0.3567822235729545, 'avg_recon_loss': 3.2646520703375852e-06, 'avg_physics_loss': 1.7838947615524132}
+================================================================================
+================================================================================
+Scientific Cycle: [83 / 150]
+Aggregated Regularization Training Loss     : 0.090976
+Aggregated Validation Tracking Loss         : 0.396300
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.0909760562547793, 'avg_total_loss': 0.0909760562547793, 'avg_recon_loss': 1.936241761768542e-06, 'avg_physics_loss': 0.45487059056758883}
+================================================================================
+================================================================================
+Scientific Cycle: [84 / 150]
+Aggregated Regularization Training Loss     : 0.273319
+Aggregated Validation Tracking Loss         : 0.045280
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.27331940619585415, 'avg_total_loss': 0.27331940619585415, 'avg_recon_loss': 2.8501976663619643e-06, 'avg_physics_loss': 1.3665827542791764}
+================================================================================
+================================================================================
+Scientific Cycle: [85 / 150]
+Aggregated Regularization Training Loss     : 0.142239
+Aggregated Validation Tracking Loss         : 6.073675
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.14223939881349604, 'avg_total_loss': 0.14223939881349604, 'avg_recon_loss': 2.1968293906600898e-06, 'avg_physics_loss': 0.7111860008786122}
+================================================================================
+================================================================================
+Scientific Cycle: [86 / 150]
+Aggregated Regularization Training Loss     : 0.573540
+Aggregated Validation Tracking Loss         : 0.026272
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.5735401256335899, 'avg_total_loss': 0.5735401256335899, 'avg_recon_loss': 4.34996479223552e-06, 'avg_physics_loss': 2.867678815399607}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.026272)
+================================================================================
+Scientific Cycle: [87 / 150]
+Aggregated Regularization Training Loss     : 0.114972
+Aggregated Validation Tracking Loss         : 0.234937
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.1149719743275394, 'avg_total_loss': 0.1149719743275394, 'avg_recon_loss': 2.056708085073448e-06, 'avg_physics_loss': 0.5748495781173308}
+================================================================================
+================================================================================
+Scientific Cycle: [88 / 150]
+Aggregated Regularization Training Loss     : 0.085758
+Aggregated Validation Tracking Loss         : 0.040838
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.08575840451133748, 'avg_total_loss': 0.08575840451133748, 'avg_recon_loss': 1.9111696672287813e-06, 'avg_physics_loss': 0.42878245912492274}
+================================================================================
+================================================================================
+Scientific Cycle: [89 / 150]
+Aggregated Regularization Training Loss     : 0.255755
+Aggregated Validation Tracking Loss         : 0.039181
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.25575471818136675, 'avg_total_loss': 0.25575471818136675, 'avg_recon_loss': 2.758294088778257e-06, 'avg_physics_loss': 1.2787597754970192}
+================================================================================
+================================================================================
+Scientific Cycle: [90 / 150]
+Aggregated Regularization Training Loss     : 0.062875
+Aggregated Validation Tracking Loss         : 0.121850
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.06287519621662796, 'avg_total_loss': 0.06287519621662796, 'avg_recon_loss': 1.7969348557282199e-06, 'avg_physics_loss': 0.3143669907624523}
+================================================================================
+================================================================================
+Scientific Cycle: [91 / 150]
+Aggregated Regularization Training Loss     : 0.243630
+Aggregated Validation Tracking Loss         : 0.039313
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.24363043103987972, 'avg_total_loss': 0.24363043103987972, 'avg_recon_loss': 2.6981381103041712e-06, 'avg_physics_loss': 1.218138646185398}
+================================================================================
+================================================================================
+Scientific Cycle: [92 / 150]
+Aggregated Regularization Training Loss     : 0.077440
+Aggregated Validation Tracking Loss         : 0.241556
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.07744009984657169, 'avg_total_loss': 0.07744009984657169, 'avg_recon_loss': 1.869743488308965e-06, 'avg_physics_loss': 0.38719114410380523}
+================================================================================
+================================================================================
+Scientific Cycle: [93 / 150]
+Aggregated Regularization Training Loss     : 0.336737
+Aggregated Validation Tracking Loss         : 0.033519
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.33673719913388295, 'avg_total_loss': 0.33673719913388295, 'avg_recon_loss': 3.168186061562513e-06, 'avg_physics_loss': 1.6836701250697175}
+================================================================================
+================================================================================
+Scientific Cycle: [94 / 150]
+Aggregated Regularization Training Loss     : 0.038057
+Aggregated Validation Tracking Loss         : 0.041713
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.03805695873529961, 'avg_total_loss': 0.03805695873529961, 'avg_recon_loss': 1.6723021197625105e-06, 'avg_physics_loss': 0.19027642885843912}
+================================================================================
+================================================================================
+Scientific Cycle: [95 / 150]
+Aggregated Regularization Training Loss     : 0.231884
+Aggregated Validation Tracking Loss         : 0.045741
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.2318842474836856, 'avg_total_loss': 0.2318842474836856, 'avg_recon_loss': 2.641482570879816e-06, 'avg_physics_loss': 1.1594080093378822}
+================================================================================
+================================================================================
+Scientific Cycle: [96 / 150]
+Aggregated Regularization Training Loss     : 0.040050
+Aggregated Validation Tracking Loss         : 0.029334
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.04005007445812225, 'avg_total_loss': 0.04005007445812225, 'avg_recon_loss': 1.6820199109209473e-06, 'avg_physics_loss': 0.20024195833752553}
+================================================================================
+================================================================================
+Scientific Cycle: [97 / 150]
+Aggregated Regularization Training Loss     : 0.068150
+Aggregated Validation Tracking Loss         : 0.164872
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.06815033990268905, 'avg_total_loss': 0.06815033990268905, 'avg_recon_loss': 1.8232685025054706e-06, 'avg_physics_loss': 0.34074257779866457}
+================================================================================
+================================================================================
+Scientific Cycle: [98 / 150]
+Aggregated Regularization Training Loss     : 0.245715
+Aggregated Validation Tracking Loss         : 0.026623
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.24571549239878854, 'avg_total_loss': 0.24571549239878854, 'avg_recon_loss': 2.709490884266567e-06, 'avg_physics_loss': 1.228563897423446}
+================================================================================
+================================================================================
+Scientific Cycle: [99 / 150]
+Aggregated Regularization Training Loss     : 0.039793
+Aggregated Validation Tracking Loss         : 0.030927
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.039792657763076326, 'avg_total_loss': 0.039792657763076326, 'avg_recon_loss': 1.6807108601331795e-06, 'avg_physics_loss': 0.19895488172769546}
+================================================================================
+================================================================================
+Scientific Cycle: [100 / 150]
+Aggregated Regularization Training Loss     : 0.056572
+Aggregated Validation Tracking Loss         : 0.071472
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.05657193958448867, 'avg_total_loss': 0.05657193958448867, 'avg_recon_loss': 1.765487841396407e-06, 'avg_physics_loss': 0.28285086548576754}
+================================================================================
+================================================================================
+Scientific Cycle: [101 / 150]
+Aggregated Regularization Training Loss     : 0.148278
+Aggregated Validation Tracking Loss         : 0.042331
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.1482778151643773, 'avg_total_loss': 0.1482778151643773, 'avg_recon_loss': 2.222616383373103e-06, 'avg_physics_loss': 0.7413779501989484}
+================================================================================
+================================================================================
+Scientific Cycle: [102 / 150]
+Aggregated Regularization Training Loss     : 0.074620
+Aggregated Validation Tracking Loss         : 0.212371
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.07461991515941918, 'avg_total_loss': 0.07461991515941918, 'avg_recon_loss': 1.8558116638208352e-06, 'avg_physics_loss': 0.3730902899429202}
+================================================================================
+================================================================================
+Scientific Cycle: [103 / 150]
+Aggregated Regularization Training Loss     : 0.093939
+Aggregated Validation Tracking Loss         : 0.027567
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.09393862920968483, 'avg_total_loss': 0.09393862920968483, 'avg_recon_loss': 1.94953639426861e-06, 'avg_physics_loss': 0.46968339120348296}
+================================================================================
+================================================================================
+Scientific Cycle: [104 / 150]
+Aggregated Regularization Training Loss     : 0.039066
+Aggregated Validation Tracking Loss         : 0.062603
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.039065879376915594, 'avg_total_loss': 0.039065879376915594, 'avg_recon_loss': 1.6767416627772037e-06, 'avg_physics_loss': 0.19532100938260555}
+================================================================================
+================================================================================
+Scientific Cycle: [105 / 150]
+Aggregated Regularization Training Loss     : 0.097606
+Aggregated Validation Tracking Loss         : 0.038060
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.09760562777829666, 'avg_total_loss': 0.09760562777829666, 'avg_recon_loss': 1.9699468590298844e-06, 'avg_physics_loss': 0.48801827936122816}
+================================================================================
+================================================================================
+Scientific Cycle: [106 / 150]
+Aggregated Regularization Training Loss     : 0.061267
+Aggregated Validation Tracking Loss         : 0.047321
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.06126694425319632, 'avg_total_loss': 0.06126694425319632, 'avg_recon_loss': 1.787802698155853e-06, 'avg_physics_loss': 0.306325777148207}
+================================================================================
+================================================================================
+Scientific Cycle: [107 / 150]
+Aggregated Regularization Training Loss     : 0.072576
+Aggregated Validation Tracking Loss         : 0.033904
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.07257576821371912, 'avg_total_loss': 0.07257576821371912, 'avg_recon_loss': 1.8434227141976105e-06, 'avg_physics_loss': 0.36286961908141774}
+================================================================================
+================================================================================
+Scientific Cycle: [108 / 150]
+Aggregated Regularization Training Loss     : 0.071624
+Aggregated Validation Tracking Loss         : 0.034865
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.07162381165660918, 'avg_total_loss': 0.07162381165660918, 'avg_recon_loss': 1.8398207478753649e-06, 'avg_physics_loss': 0.3581098532428344}
+================================================================================
+================================================================================
+Scientific Cycle: [109 / 150]
+Aggregated Regularization Training Loss     : 0.047240
+Aggregated Validation Tracking Loss         : 0.029779
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.04723955002923807, 'avg_total_loss': 0.04723955002923807, 'avg_recon_loss': 1.7168850646006224e-06, 'avg_physics_loss': 0.23618916084369024}
+================================================================================
+================================================================================
+Scientific Cycle: [110 / 150]
+Aggregated Regularization Training Loss     : 0.143990
+Aggregated Validation Tracking Loss         : 0.025547
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.14399021540458004, 'avg_total_loss': 0.14399021540458004, 'avg_recon_loss': 2.202859671077325e-06, 'avg_physics_loss': 0.719940051374336}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.025547)
+================================================================================
+Scientific Cycle: [111 / 150]
+Aggregated Regularization Training Loss     : 0.024932
+Aggregated Validation Tracking Loss         : 0.029920
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.02493183790395657, 'avg_total_loss': 0.02493183790395657, 'avg_recon_loss': 1.6061623156815585e-06, 'avg_physics_loss': 0.1246511565335095}
+================================================================================
+================================================================================
+Scientific Cycle: [112 / 150]
+Aggregated Regularization Training Loss     : 0.031603
+Aggregated Validation Tracking Loss         : 0.024861
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.03160327119752765, 'avg_total_loss': 0.03160327119752765, 'avg_recon_loss': 1.6396802619548605e-06, 'avg_physics_loss': 0.15800815489143133}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.024861)
+================================================================================
+Scientific Cycle: [113 / 150]
+Aggregated Regularization Training Loss     : 0.040938
+Aggregated Validation Tracking Loss         : 0.036553
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.04093830200843513, 'avg_total_loss': 0.04093830200843513, 'avg_recon_loss': 1.6866496545731025e-06, 'avg_physics_loss': 0.20468307344863812}
+================================================================================
+================================================================================
+Scientific Cycle: [114 / 150]
+Aggregated Regularization Training Loss     : 0.038518
+Aggregated Validation Tracking Loss         : 0.037856
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.0385179169739907, 'avg_total_loss': 0.0385179169739907, 'avg_recon_loss': 1.6745277388470944e-06, 'avg_physics_loss': 0.1925812090933323}
+================================================================================
+================================================================================
+Scientific Cycle: [115 / 150]
+Aggregated Regularization Training Loss     : 0.059720
+Aggregated Validation Tracking Loss         : 0.020331
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.05971956744790077, 'avg_total_loss': 0.05971956744790077, 'avg_recon_loss': 1.780483888561927e-06, 'avg_physics_loss': 0.29858892985309166}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.020331)
+================================================================================
+Scientific Cycle: [116 / 150]
+Aggregated Regularization Training Loss     : 0.027332
+Aggregated Validation Tracking Loss         : 0.024174
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.027332290654691557, 'avg_total_loss': 0.027332290654691557, 'avg_recon_loss': 1.6183542862791001e-06, 'avg_physics_loss': 0.13665335899218917}
+================================================================================
+================================================================================
+Scientific Cycle: [117 / 150]
+Aggregated Regularization Training Loss     : 0.033844
+Aggregated Validation Tracking Loss         : 0.033633
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.03384417741869887, 'avg_total_loss': 0.03384417741869887, 'avg_recon_loss': 1.6508282083312528e-06, 'avg_physics_loss': 0.16921263001859188}
+================================================================================
+================================================================================
+Scientific Cycle: [118 / 150]
+Aggregated Regularization Training Loss     : 0.042836
+Aggregated Validation Tracking Loss         : 0.026234
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.0428359951886038, 'avg_total_loss': 0.0428359951886038, 'avg_recon_loss': 1.6964571418990696e-06, 'avg_physics_loss': 0.21417148963858684}
+================================================================================
+================================================================================
+Scientific Cycle: [119 / 150]
+Aggregated Regularization Training Loss     : 0.029453
+Aggregated Validation Tracking Loss         : 0.027412
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.029452939744417865, 'avg_total_loss': 0.029452939744417865, 'avg_recon_loss': 1.6285352882050574e-06, 'avg_physics_loss': 0.14725655334691207}
+================================================================================
+================================================================================
+Scientific Cycle: [120 / 150]
+Aggregated Regularization Training Loss     : 0.036655
+Aggregated Validation Tracking Loss         : 0.027708
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.03665471751863758, 'avg_total_loss': 0.03665471751863758, 'avg_recon_loss': 1.6649022741906569e-06, 'avg_physics_loss': 0.1832652603213986}
+================================================================================
+================================================================================
+Scientific Cycle: [121 / 150]
+Aggregated Regularization Training Loss     : 0.030161
+Aggregated Validation Tracking Loss         : 0.043180
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.03016064548244079, 'avg_total_loss': 0.03016064548244079, 'avg_recon_loss': 1.6329929628492816e-06, 'avg_physics_loss': 0.15079506034652393}
+================================================================================
+================================================================================
+Scientific Cycle: [122 / 150]
+Aggregated Regularization Training Loss     : 0.030619
+Aggregated Validation Tracking Loss         : 0.030230
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.030618690767635903, 'avg_total_loss': 0.030618690767635903, 'avg_recon_loss': 1.6339391425882848e-06, 'avg_physics_loss': 0.15308528108522296}
+================================================================================
+================================================================================
+Scientific Cycle: [123 / 150]
+Aggregated Regularization Training Loss     : 0.026747
+Aggregated Validation Tracking Loss         : 0.039717
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.026747391855654615, 'avg_total_loss': 0.026747391855654615, 'avg_recon_loss': 1.615824332077409e-06, 'avg_physics_loss': 0.13372887765367825}
+================================================================================
+================================================================================
+Scientific Cycle: [124 / 150]
+Aggregated Regularization Training Loss     : 0.028877
+Aggregated Validation Tracking Loss         : 0.024530
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.02887703222067406, 'avg_total_loss': 0.02887703222067406, 'avg_recon_loss': 1.6260236261208169e-06, 'avg_physics_loss': 0.14437702850749096}
+================================================================================
+================================================================================
+Scientific Cycle: [125 / 150]
+Aggregated Regularization Training Loss     : 0.030029
+Aggregated Validation Tracking Loss         : 0.019204
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.030028933067806064, 'avg_total_loss': 0.030028933067806064, 'avg_recon_loss': 1.6314146422284163e-06, 'avg_physics_loss': 0.15013650560130676}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.019204)
+================================================================================
+Scientific Cycle: [126 / 150]
+Aggregated Regularization Training Loss     : 0.022292
+Aggregated Validation Tracking Loss         : 0.072016
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.022291825527014832, 'avg_total_loss': 0.022291825527014832, 'avg_recon_loss': 1.5938972237942531e-06, 'avg_physics_loss': 0.11145115646223228}
+================================================================================
+================================================================================
+Scientific Cycle: [127 / 150]
+Aggregated Regularization Training Loss     : 0.024831
+Aggregated Validation Tracking Loss         : 0.019812
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.02483145991029839, 'avg_total_loss': 0.02483145991029839, 'avg_recon_loss': 1.6051001523464947e-06, 'avg_physics_loss': 0.12414927165334423}
+================================================================================
+================================================================================
+Scientific Cycle: [128 / 150]
+Aggregated Regularization Training Loss     : 0.023719
+Aggregated Validation Tracking Loss         : 0.021380
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.023718601708921292, 'avg_total_loss': 0.023718601708921292, 'avg_recon_loss': 1.599909468552596e-06, 'avg_physics_loss': 0.11858500703548391}
+================================================================================
+================================================================================
+Scientific Cycle: [129 / 150]
+Aggregated Regularization Training Loss     : 0.025246
+Aggregated Validation Tracking Loss         : 0.017836
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.025245901965536176, 'avg_total_loss': 0.025245901965536176, 'avg_recon_loss': 1.607426022189884e-06, 'avg_physics_loss': 0.12622147087007762}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.017836)
+================================================================================
+Scientific Cycle: [130 / 150]
+Aggregated Regularization Training Loss     : 0.021125
+Aggregated Validation Tracking Loss         : 0.024806
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.021124689066782595, 'avg_total_loss': 0.021124689066782595, 'avg_recon_loss': 1.5873728745911347e-06, 'avg_physics_loss': 0.10561550669992964}
+================================================================================
+================================================================================
+Scientific Cycle: [131 / 150]
+Aggregated Regularization Training Loss     : 0.021492
+Aggregated Validation Tracking Loss         : 0.018974
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.02149213456703971, 'avg_total_loss': 0.02149213456703971, 'avg_recon_loss': 1.5894049565190471e-06, 'avg_physics_loss': 0.1074527238495648}
+================================================================================
+================================================================================
+Scientific Cycle: [132 / 150]
+Aggregated Regularization Training Loss     : 0.019988
+Aggregated Validation Tracking Loss         : 0.017754
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.019988058672752232, 'avg_total_loss': 0.019988058672752232, 'avg_recon_loss': 1.581638305291714e-06, 'avg_physics_loss': 0.09993238339200616}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.017754)
+================================================================================
+Scientific Cycle: [133 / 150]
+Aggregated Regularization Training Loss     : 0.019130
+Aggregated Validation Tracking Loss         : 0.021773
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.01912958959583193, 'avg_total_loss': 0.01912958959583193, 'avg_recon_loss': 1.577378401880954e-06, 'avg_physics_loss': 0.09564005947982271}
+================================================================================
+================================================================================
+Scientific Cycle: [134 / 150]
+Aggregated Regularization Training Loss     : 0.019448
+Aggregated Validation Tracking Loss         : 0.017755
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.01944833597323547, 'avg_total_loss': 0.01944833597323547, 'avg_recon_loss': 1.5788820861454648e-06, 'avg_physics_loss': 0.09723378370826442}
+================================================================================
+================================================================================
+Scientific Cycle: [135 / 150]
+Aggregated Regularization Training Loss     : 0.018518
+Aggregated Validation Tracking Loss         : 0.020053
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.018517528344721843, 'avg_total_loss': 0.018517528344721843, 'avg_recon_loss': 1.5742254642721794e-06, 'avg_physics_loss': 0.09257976902027924}
+================================================================================
+================================================================================
+Scientific Cycle: [136 / 150]
+Aggregated Regularization Training Loss     : 0.017521
+Aggregated Validation Tracking Loss         : 0.018779
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.017520985403098165, 'avg_total_loss': 0.017520985403098165, 'avg_recon_loss': 1.5691357148739371e-06, 'avg_physics_loss': 0.08759707996000846}
+================================================================================
+================================================================================
+Scientific Cycle: [137 / 150]
+Aggregated Regularization Training Loss     : 0.017066
+Aggregated Validation Tracking Loss         : 0.017809
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.017065785055359203, 'avg_total_loss': 0.017065785055359203, 'avg_recon_loss': 1.5668007509361814e-06, 'avg_physics_loss': 0.0853210896315674}
+================================================================================
+================================================================================
+Scientific Cycle: [138 / 150]
+Aggregated Regularization Training Loss     : 0.017240
+Aggregated Validation Tracking Loss         : 0.016122
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.017239621283176045, 'avg_total_loss': 0.017239621283176045, 'avg_recon_loss': 1.5681734698584176e-06, 'avg_physics_loss': 0.08619026426846782}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.016122)
+================================================================================
+Scientific Cycle: [139 / 150]
+Aggregated Regularization Training Loss     : 0.016262
+Aggregated Validation Tracking Loss         : 0.015393
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.016262268328573554, 'avg_total_loss': 0.016262268328573554, 'avg_recon_loss': 1.5627615629417355e-06, 'avg_physics_loss': 0.08130352671568593}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.015393)
+================================================================================
+Scientific Cycle: [140 / 150]
+Aggregated Regularization Training Loss     : 0.016036
+Aggregated Validation Tracking Loss         : 0.015694
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.016035527498461308, 'avg_total_loss': 0.016035527498461308, 'avg_recon_loss': 1.5617348463100219e-06, 'avg_physics_loss': 0.08016982725821435}
+================================================================================
+================================================================================
+Scientific Cycle: [141 / 150]
+Aggregated Regularization Training Loss     : 0.015760
+Aggregated Validation Tracking Loss         : 0.014925
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.015759750735014677, 'avg_total_loss': 0.015759750735014677, 'avg_recon_loss': 1.560381874507281e-06, 'avg_physics_loss': 0.07879095021014412}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.014925)
+================================================================================
+Scientific Cycle: [142 / 150]
+Aggregated Regularization Training Loss     : 0.015218
+Aggregated Validation Tracking Loss         : 0.014613
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.015218052136866996, 'avg_total_loss': 0.015218052136866996, 'avg_recon_loss': 1.5576200380943798e-06, 'avg_physics_loss': 0.07608247129867474}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.014613)
+================================================================================
+Scientific Cycle: [143 / 150]
+Aggregated Regularization Training Loss     : 0.015036
+Aggregated Validation Tracking Loss         : 0.014041
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.01503612081365039, 'avg_total_loss': 0.01503612081365039, 'avg_recon_loss': 1.5566815440593019e-06, 'avg_physics_loss': 0.07517281929651896}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.014041)
+================================================================================
+Scientific Cycle: [144 / 150]
+Aggregated Regularization Training Loss     : 0.014711
+Aggregated Validation Tracking Loss         : 0.013954
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.014710997425330182, 'avg_total_loss': 0.014710997425330182, 'avg_recon_loss': 1.5549139448959674e-06, 'avg_physics_loss': 0.07354721133907637}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.013954)
+================================================================================
+Scientific Cycle: [145 / 150]
+Aggregated Regularization Training Loss     : 0.014479
+Aggregated Validation Tracking Loss         : 0.014161
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.01447855460845555, 'avg_total_loss': 0.01447855460845555, 'avg_recon_loss': 1.5538742598171968e-06, 'avg_physics_loss': 0.07238500255470474}
+================================================================================
+================================================================================
+Scientific Cycle: [146 / 150]
+Aggregated Regularization Training Loss     : 0.014324
+Aggregated Validation Tracking Loss         : 0.013690
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.014323517015048613, 'avg_total_loss': 0.014323517015048613, 'avg_recon_loss': 1.5531657865134699e-06, 'avg_physics_loss': 0.0716098181468745}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.013690)
+================================================================================
+Scientific Cycle: [147 / 150]
+Aggregated Regularization Training Loss     : 0.014090
+Aggregated Validation Tracking Loss         : 0.013448
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.01408982597834741, 'avg_total_loss': 0.01408982597834741, 'avg_recon_loss': 1.5518957475061749e-06, 'avg_physics_loss': 0.07044136927773555}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.013448)
+================================================================================
+Scientific Cycle: [148 / 150]
+Aggregated Regularization Training Loss     : 0.013975
+Aggregated Validation Tracking Loss         : 0.013528
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.013974906559257457, 'avg_total_loss': 0.013974906559257457, 'avg_recon_loss': 1.55147247843009e-06, 'avg_physics_loss': 0.06986677431811888}
+================================================================================
+================================================================================
+Scientific Cycle: [149 / 150]
+Aggregated Regularization Training Loss     : 0.013890
+Aggregated Validation Tracking Loss         : 0.013370
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.013890141681768, 'avg_total_loss': 0.013890141681768, 'avg_recon_loss': 1.5509746776842802e-06, 'avg_physics_loss': 0.06944295226285856}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.013370)
+================================================================================
+Scientific Cycle: [150 / 150]
+Aggregated Regularization Training Loss     : 0.013828
+Aggregated Validation Tracking Loss         : 0.013364
+Continuous Physical Component Metrics Logs  : {'running_loss': 0.013828021317409973, 'avg_total_loss': 0.013828021317409973, 'avg_recon_loss': 1.550555831499878e-06, 'avg_physics_loss': 0.06913235245272517}
+================================================================================
+[+] Verification Invariant Met. Saved Elite Operator Invariant Checkpoint (Loss: 0.013364)
+
+[+] Yuánlǐ AI Training Suite Pipeline Completed Successfully.
+[*] Initiating Complete Project Pipeline Archiving...
+------------------------------------------------------------
+	zip warning: name not matched: *.sh
+	zip warning: name not matched: *.pth
+	zip warning: name not matched: *.pt
+  adding: models/ (stored 0%)
+  adding: models/fno_baseline.py (deflated 63%)
+  adding: models/lno_model.py (deflated 66%)
+  adding: models/dissipative_layer.py (deflated 62%)
+  adding: models/__pycache__/ (stored 0%)
+  adding: models/__pycache__/lno_model.cpython-312.pyc (deflated 50%)
+  adding: models/__pycache__/dissipative_layer.cpython-312.pyc (deflated 47%)
+  adding: models/__pycache__/spectral_kernel.cpython-312.pyc (deflated 42%)
+  adding: models/__pycache__/base_operator.cpython-312.pyc (deflated 42%)
+  adding: models/spectral_kernel.py (deflated 58%)
+  adding: models/checkpoints/ (stored 0%)
+  adding: models/base_operator.py (deflated 52%)
+  adding: models/koopman_baseline.py (deflated 60%)
+  adding: training/ (stored 0%)
+  adding: training/trainer_lno.py (deflated 73%)
+  adding: training/optimizer.py (deflated 58%)
+  adding: training/train.py (deflated 62%)
+  adding: training/__pycache__/ (stored 0%)
+  adding: training/__pycache__/trainer_lno.cpython-312.pyc (deflated 47%)
+  adding: training/__pycache__/scheduler.cpython-312.pyc (deflated 44%)
+  adding: training/__pycache__/losses.cpython-312.pyc (deflated 47%)
+  adding: training/__pycache__/optimizer.cpython-312.pyc (deflated 42%)
+  adding: training/scheduler.py (deflated 58%)
+  adding: training/losses.py (deflated 65%)
+  adding: physics/ (stored 0%)
+  adding: physics/entropy_metrics.py (deflated 67%)
+  adding: physics/pnp_equations.py (deflated 66%)
+  adding: physics/dissipation_utils.py (deflated 65%)
+  adding: physics/lindblad_operator.py (deflated 62%)
+  adding: utils/ (stored 0%)
+  adding: utils/config_loader.py (deflated 43%)
+  adding: utils/checkpoint.py (deflated 58%)
+  adding: utils/seed.py (deflated 45%)
+  adding: utils/logger.py (deflated 47%)
+  adding: evaluation/ (stored 0%)
+  adding: evaluation/compare_models.py (deflated 61%)
+  adding: evaluation/spectral_analysis.py (deflated 62%)
+  adding: evaluation/stability_analysis.py (deflated 61%)
+  adding: evaluation/uq_analysis.py (deflated 60%)
+  adding: evaluation/metrics.py (deflated 66%)
+  adding: boundary_conditions.py (deflated 55%)
+  adding: dataset_generator.py (deflated 69%)
+  adding: dataset_loader.py (deflated 63%)
+  adding: __init__ (7).py (deflated 38%)
+  adding: pnp_simulator.py (deflated 67%)
+  adding: preprocessing.py (deflated 47%)
+  adding: regime_configs.py (deflated 55%)
+  adding: setup.py (deflated 42%)
+  adding: stochastic_forcing.py (deflated 55%)
+  adding: transport_metrics.py (deflated 54%)
+  adding: validation.py (deflated 59%)
+  adding: config.yaml (deflated 49%)
+------------------------------------------------------------
+[+] Master Zip Archive created successfully: 'project_lno_training_package.zip'
+[*] Triggering automatic local browser download now... (Ensure pop-ups are allowed)
+[*] Initiating Complete Project Pipeline Archiving...
+------------------------------------------------------------
+	zip warning: name not matched: *.sh
+	zip warning: name not matched: *.pth
+	zip warning: name not matched: *.pt
+updating: models/ (stored 0%)
+updating: models/fno_baseline.py (deflated 63%)
+updating: models/lno_model.py (deflated 66%)
+updating: models/dissipative_layer.py (deflated 62%)
+updating: models/__pycache__/ (stored 0%)
+updating: models/__pycache__/lno_model.cpython-312.pyc (deflated 50%)
+updating: models/__pycache__/dissipative_layer.cpython-312.pyc (deflated 47%)
+updating: models/__pycache__/spectral_kernel.cpython-312.pyc (deflated 42%)
+updating: models/__pycache__/base_operator.cpython-312.pyc (deflated 42%)
+updating: models/spectral_kernel.py (deflated 58%)
+updating: models/checkpoints/ (stored 0%)
+updating: models/base_operator.py (deflated 52%)
+updating: models/koopman_baseline.py (deflated 60%)
+updating: training/ (stored 0%)
+updating: training/trainer_lno.py (deflated 73%)
+updating: training/optimizer.py (deflated 58%)
+updating: training/train.py (deflated 62%)
+updating: training/__pycache__/ (stored 0%)
+updating: training/__pycache__/trainer_lno.cpython-312.pyc (deflated 47%)
+updating: training/__pycache__/scheduler.cpython-312.pyc (deflated 44%)
+updating: training/__pycache__/losses.cpython-312.pyc (deflated 47%)
+updating: training/__pycache__/optimizer.cpython-312.pyc (deflated 42%)
+updating: training/scheduler.py (deflated 58%)
+updating: training/losses.py (deflated 65%)
+updating: physics/ (stored 0%)
+updating: physics/entropy_metrics.py (deflated 67%)
+updating: physics/pnp_equations.py (deflated 66%)
+updating: physics/dissipation_utils.py (deflated 65%)
+updating: physics/lindblad_operator.py (deflated 62%)
+updating: utils/ (stored 0%)
+updating: utils/config_loader.py (deflated 43%)
+updating: utils/checkpoint.py (deflated 58%)
+updating: utils/seed.py (deflated 45%)
+updating: utils/logger.py (deflated 47%)
+updating: evaluation/ (stored 0%)
+updating: evaluation/compare_models.py (deflated 61%)
+updating: evaluation/spectral_analysis.py (deflated 62%)
+updating: evaluation/stability_analysis.py (deflated 61%)
+updating: evaluation/uq_analysis.py (deflated 60%)
+updating: evaluation/metrics.py (deflated 66%)
+updating: boundary_conditions.py (deflated 55%)
+updating: dataset_generator.py (deflated 69%)
+updating: dataset_loader.py (deflated 63%)
+updating: __init__ (7).py (deflated 38%)
+updating: pnp_simulator.py (deflated 67%)
+updating: preprocessing.py (deflated 47%)
+updating: regime_configs.py (deflated 55%)
+updating: setup.py (deflated 42%)
+updating: stochastic_forcing.py (deflated 55%)
+updating: transport_metrics.py (deflated 54%)
+updating: validation.py (deflated 59%)
+updating: config.yaml (deflated 49%)
+------------------------------------------------------------
+[+] Master Zip Archive created successfully: 'project_lno_training_package.zip'
+[*] Triggering automatic local browser download now... (Ensure pop-ups are allowed)
+[*] Generating High-End Evaluation Plots...
+[+] Evaluation field profile saved successfully: 'evaluation/lno_field_prediction.png'
+[+] Absolute error topology saved successfully: 'evaluation/absolute_error_map.png'
+------------------------------------------------------------
+[+] All diagnostic plots are locked inside the 'evaluation/' directory!
+[*] Initiating Complete Project Pipeline Archiving...
+------------------------------------------------------------
+	zip warning: name not matched: *.sh
+	zip warning: name not matched: *.pth
+	zip warning: name not matched: *.pt
+updating: models/ (stored 0%)
+updating: models/fno_baseline.py (deflated 63%)
+updating: models/lno_model.py (deflated 66%)
+updating: models/dissipative_layer.py (deflated 62%)
+updating: models/__pycache__/ (stored 0%)
+updating: models/__pycache__/lno_model.cpython-312.pyc (deflated 50%)
+updating: models/__pycache__/dissipative_layer.cpython-312.pyc (deflated 47%)
+updating: models/__pycache__/spectral_kernel.cpython-312.pyc (deflated 42%)
+updating: models/__pycache__/base_operator.cpython-312.pyc (deflated 42%)
+updating: models/spectral_kernel.py (deflated 58%)
+updating: models/checkpoints/ (stored 0%)
+updating: models/base_operator.py (deflated 52%)
+updating: models/koopman_baseline.py (deflated 60%)
+updating: training/ (stored 0%)
+updating: training/trainer_lno.py (deflated 73%)
+updating: training/optimizer.py (deflated 58%)
+updating: training/train.py (deflated 62%)
+updating: training/__pycache__/ (stored 0%)
+updating: training/__pycache__/trainer_lno.cpython-312.pyc (deflated 47%)
+updating: training/__pycache__/scheduler.cpython-312.pyc (deflated 44%)
+updating: training/__pycache__/losses.cpython-312.pyc (deflated 47%)
+updating: training/__pycache__/optimizer.cpython-312.pyc (deflated 42%)
+updating: training/scheduler.py (deflated 58%)
+updating: training/losses.py (deflated 65%)
+updating: physics/ (stored 0%)
+updating: physics/entropy_metrics.py (deflated 67%)
+updating: physics/pnp_equations.py (deflated 66%)
+updating: physics/dissipation_utils.py (deflated 65%)
+updating: physics/lindblad_operator.py (deflated 62%)
+updating: utils/ (stored 0%)
+updating: utils/config_loader.py (deflated 43%)
+updating: utils/checkpoint.py (deflated 58%)
+updating: utils/seed.py (deflated 45%)
+updating: utils/logger.py (deflated 47%)
+updating: evaluation/ (stored 0%)
+updating: evaluation/compare_models.py (deflated 61%)
+updating: evaluation/spectral_analysis.py (deflated 62%)
+updating: evaluation/stability_analysis.py (deflated 61%)
+updating: evaluation/uq_analysis.py (deflated 60%)
+updating: evaluation/metrics.py (deflated 66%)
+updating: boundary_conditions.py (deflated 55%)
+updating: dataset_generator.py (deflated 69%)
+updating: dataset_loader.py (deflated 63%)
+updating: __init__ (7).py (deflated 38%)
+updating: pnp_simulator.py (deflated 67%)
+updating: preprocessing.py (deflated 47%)
+updating: regime_configs.py (deflated 55%)
+updating: setup.py (deflated 42%)
+updating: stochastic_forcing.py (deflated 55%)
+updating: transport_metrics.py (deflated 54%)
+updating: validation.py (deflated 59%)
+updating: config.yaml (deflated 49%)
+  adding: evaluation/absolute_error_map.png (deflated 4%)
+  adding: evaluation/lno_field_prediction.png (deflated 7%)
+  adding: results/ (stored 0%)
+  adding: results/checkpoints/ (stored 0%)
+  adding: results/checkpoints/best_lno.pt (deflated 7%)
+------------------------------------------------------------
+[+] Master Zip Archive created successfully: 'project_lno_training_package.zip'
+[*] Triggering automatic local browser download now... (Ensure pop-ups are allowed)
+[*] Launching Master Archiving Engine...
+----------------------------------------------------------------------
+[+] Scanning & Packing Folder: results/
+    -> Added: results/checkpoints/best_lno.pt
+[+] Scanning & Packing Folder: evaluation/
+    -> Added: evaluation/compare_models.py
+    -> Added: evaluation/spectral_analysis.py
+    -> Added: evaluation/stability_analysis.py
+    -> Added: evaluation/uq_analysis.py
+    -> Added: evaluation/absolute_error_map.png
+    -> Added: evaluation/lno_field_prediction.png
+    -> Added: evaluation/metrics.py
+[+] Scanning & Packing Folder: models/
+    -> Added: models/fno_baseline.py
+    -> Added: models/lno_model.py
+    -> Added: models/dissipative_layer.py
+    -> Added: models/spectral_kernel.py
+    -> Added: models/base_operator.py
+    -> Added: models/koopman_baseline.py
+    -> Added: models/__pycache__/lno_model.cpython-312.pyc
+    -> Added: models/__pycache__/dissipative_layer.cpython-312.pyc
+    -> Added: models/__pycache__/spectral_kernel.cpython-312.pyc
+    -> Added: models/__pycache__/base_operator.cpython-312.pyc
+[+] Scanning & Packing Folder: training/
+    -> Added: training/trainer_lno.py
+    -> Added: training/optimizer.py
+    -> Added: training/train.py
+    -> Added: training/scheduler.py
+    -> Added: training/losses.py
+    -> Added: training/__pycache__/trainer_lno.cpython-312.pyc
+    -> Added: training/__pycache__/scheduler.cpython-312.pyc
+    -> Added: training/__pycache__/losses.cpython-312.pyc
+    -> Added: training/__pycache__/optimizer.cpython-312.pyc
+[+] Scanning & Packing Folder: physics/
+    -> Added: physics/entropy_metrics.py
+    -> Added: physics/pnp_equations.py
+    -> Added: physics/dissipation_utils.py
+    -> Added: physics/lindblad_operator.py
+[+] Scanning & Packing Folder: utils/
+    -> Added: utils/config_loader.py
+    -> Added: utils/checkpoint.py
+    -> Added: utils/seed.py
+    -> Added: utils/logger.py
+----------------------------------------------------------------------
+[+] Scanning Root Directory for loose scripts/configs...
+    -> Added Root File: requirements.txt
+    -> Added Root File: setup.py
+    -> Added Root File: validation.py
+    -> Added Root File: __init__ (7).py
+    -> Added Root File: transport_metrics.py
+    -> Added Root File: dataset_loader.py
+    -> Added Root File: regime_configs.py
+    -> Added Root File: stochastic_forcing.py
+    -> Added Root File: config.yaml
+    -> Added Root File: boundary_conditions.py
+    -> Added Root File: dataset_generator.py
+    -> Added Root File: pnp_simulator.py
+    -> Added Root File: preprocessing.py
+----------------------------------------------------------------------
+[++++] SUCCESS! Master Backup Created: 'project_lno_complete_backup.zip'
+[++++] Final Archive Size: 2.60 MB
+[*] Triggering automatic local browser download now... (Pop-ups allow rakhna)
+----------------------------------------------------------------------
+[*] Initiating Non-Equilibrium Thermodynamic Dataset Splitting...
+------------------------------------------------------------
+[+] state_t.npy      | Original Samples: 24000 -> Train: (19200, 128) | Val: (4800, 128)
+[+] state_t1.npy     | Original Samples: 24000 -> Train: (19200, 128) | Val: (4800, 128)
+[+] phi.npy          | Original Samples: 24000 -> Train: (19200, 128) | Val: (4800, 128)
+[+] flux.npy         | Original Samples: 24000 -> Train: (19200, 128) | Val: (4800, 128)
+[+] noise.npy        | Original Samples: 24000 -> Train: (19200, 128) | Val: (4800, 128)
+[+] dissipation.npy  | Original Samples: 24000 -> Train: (19200, 128) | Val: (4800, 128)
+[+] gamma.npy        | Original Samples: 24000 -> Train: (19200, 128) | Val: (4800, 128)
+[+] entropy.npy      | Original Samples: 24000 -> Train: (19200, 1) | Val: (4800, 1)
+[+] instability.npy  | Original Samples: 24000 -> Train: (19200, 128) | Val: (4800, 128)
+------------------------------------------------------------
+[+] Dataset splitting complete. Pipeline architecture is perfectly aligned!
+
+======================================================================
+[+] LAUNCHING CORE OPERATOR BENCHMARK PIPELINE
+======================================================================
+[+] Mounted verification data stream from 'dataset/val'
+[*] Initializing model layers for benchmarking...
+    [!] Warning: Checkpoint missing for FNO at 'results/checkpoints/fno_best.pt'. Using random initialization fallback.
+    [!] Warning: Checkpoint missing for Koopman at 'results/checkpoints/koopman_best.pt'. Using random initialization fallback.
+    [+] Successfully loaded trained weights for LNO
+
+[*] Running Evaluation Loop -> FNO
+    -> rmse                     : 0.573130
+    -> relative_l2              : 0.950903
+    -> mae                      : 0.520822
+    -> mass_error               : 66.665235
+    -> entropy_error            : 24.671314
+    -> instability_index        : 0.000989
+    -> dissipation_rate         : 0.000103
+    -> spectral_energy          : 0.220555
+
+[*] Running Evaluation Loop -> Koopman
+    -> rmse                     : 0.604441
+    -> relative_l2              : 1.012528
+    -> mae                      : 0.554383
+    -> mass_error               : 70.960995
+    -> entropy_error            : 31.317454
+    -> instability_index        : 0.041852
+    -> dissipation_rate         : 0.002762
+    -> spectral_energy          : 0.194133
+
+[*] Running Evaluation Loop -> LNO
+    -> rmse                     : 0.001233
+    -> relative_l2              : 0.001951
+    -> mae                      : 0.000539
+    -> mass_error               : 0.049419
+    -> entropy_error            : 0.031984
+    -> instability_index        : 0.069991
+    -> dissipation_rate         : 0.010026
+    -> spectral_energy          : 86.951497
+
+======================================================================
+[++++] BENCHMARK COMPLETION SUCCESSFUL
+======================================================================
+
+======================================================================
+[+] INITIATING STOCHASTIC THERMAL ROBUSTNESS SWEEP
+======================================================================
+[+] Successfully loaded trained weights for LNO Profile.
+[*] Launching Perturbation Loop across Noise Spectrum...
+    -> Sigma [0.000] | Bound Error (RMSE): 0.001300
+    -> Sigma [0.079] | Bound Error (RMSE): 0.001875
+    -> Sigma [0.158] | Bound Error (RMSE): 0.003068
+    -> Sigma [0.237] | Bound Error (RMSE): 0.004487
+    -> Sigma [0.316] | Bound Error (RMSE): 0.005852
+    -> Sigma [0.395] | Bound Error (RMSE): 0.008039
+    -> Sigma [0.474] | Bound Error (RMSE): 0.008696
+    -> Sigma [0.553] | Bound Error (RMSE): 0.009140
+    -> Sigma [0.632] | Bound Error (RMSE): 0.010097
+    -> Sigma [0.711] | Bound Error (RMSE): 0.012860
+    -> Sigma [0.789] | Bound Error (RMSE): 0.012853
+    -> Sigma [0.868] | Bound Error (RMSE): 0.015565
+    -> Sigma [0.947] | Bound Error (RMSE): 0.015467
+    -> Sigma [1.026] | Bound Error (RMSE): 0.017345
+    -> Sigma [1.105] | Bound Error (RMSE): 0.019419
+    -> Sigma [1.184] | Bound Error (RMSE): 0.019326
+    -> Sigma [1.263] | Bound Error (RMSE): 0.021608
+    -> Sigma [1.342] | Bound Error (RMSE): 0.023425
+    -> Sigma [1.421] | Bound Error (RMSE): 0.024291
+    -> Sigma [1.500] | Bound Error (RMSE): 0.025164
+[++++] Noise Evaluation Complete. Visual Diagnostics saved to results/noise_robustness/
+
+======================================================================
+[+] INITIALIZING AUTOREGRESSIVE LONG-HORIZON STABILITY EXPERIMENT
+======================================================================
+[+] Loaded pre-trained weights for LNO Target Layers.
+[*] Simulating FNO Unbounded Horizon...
+[*] Simulating LNO Dissipation-Constrained Horizon...
+[++++] Stability Rollouts Compiled. Diagnostic plots committed to results/long_horizon/ plots.

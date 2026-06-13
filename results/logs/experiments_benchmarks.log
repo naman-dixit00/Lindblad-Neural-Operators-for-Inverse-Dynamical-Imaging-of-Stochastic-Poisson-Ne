@@ -1,0 +1,94 @@
+
+======================================================================
+[+] LAUNCHING CORE OPERATOR BENCHMARK PIPELINE
+======================================================================
+[+] Mounted verification data stream from 'dataset/val'
+[*] Initializing model layers for benchmarking...
+    [!] Warning: Checkpoint missing for FNO at 'results/checkpoints/fno_best.pt'. Using random initialization fallback.
+    [!] Warning: Checkpoint missing for Koopman at 'results/checkpoints/koopman_best.pt'. Using random initialization fallback.
+    [+] Successfully loaded trained weights for LNO
+
+[*] Running Evaluation Loop -> FNO
+    -> rmse                     : 0.573130
+    -> relative_l2              : 0.950903
+    -> mae                      : 0.520822
+    -> mass_error               : 66.665235
+    -> entropy_error            : 24.671314
+    -> instability_index        : 0.000989
+    -> dissipation_rate         : 0.000103
+    -> spectral_energy          : 0.220555
+
+[*] Running Evaluation Loop -> Koopman
+    -> rmse                     : 0.604441
+    -> relative_l2              : 1.012528
+    -> mae                      : 0.554383
+    -> mass_error               : 70.960995
+    -> entropy_error            : 31.317454
+    -> instability_index        : 0.041852
+    -> dissipation_rate         : 0.002762
+    -> spectral_energy          : 0.194133
+
+[*] Running Evaluation Loop -> LNO
+    -> rmse                     : 0.001233
+    -> relative_l2              : 0.001951
+    -> mae                      : 0.000539
+    -> mass_error               : 0.049419
+    -> entropy_error            : 0.031984
+    -> instability_index        : 0.069991
+    -> dissipation_rate         : 0.010026
+    -> spectral_energy          : 86.951497
+
+======================================================================
+[++++] BENCHMARK COMPLETION SUCCESSFUL
+======================================================================
+
+======================================================================
+[+] INITIATING STOCHASTIC THERMAL ROBUSTNESS SWEEP
+======================================================================
+[+] Successfully loaded trained weights for LNO Profile.
+[*] Launching Perturbation Loop across Noise Spectrum...
+    -> Sigma [0.000] | Bound Error (RMSE): 0.001300
+    -> Sigma [0.079] | Bound Error (RMSE): 0.001875
+    -> Sigma [0.158] | Bound Error (RMSE): 0.003068
+    -> Sigma [0.237] | Bound Error (RMSE): 0.004487
+    -> Sigma [0.316] | Bound Error (RMSE): 0.005852
+    -> Sigma [0.395] | Bound Error (RMSE): 0.008039
+    -> Sigma [0.474] | Bound Error (RMSE): 0.008696
+    -> Sigma [0.553] | Bound Error (RMSE): 0.009140
+    -> Sigma [0.632] | Bound Error (RMSE): 0.010097
+    -> Sigma [0.711] | Bound Error (RMSE): 0.012860
+    -> Sigma [0.789] | Bound Error (RMSE): 0.012853
+    -> Sigma [0.868] | Bound Error (RMSE): 0.015565
+    -> Sigma [0.947] | Bound Error (RMSE): 0.015467
+    -> Sigma [1.026] | Bound Error (RMSE): 0.017345
+    -> Sigma [1.105] | Bound Error (RMSE): 0.019419
+    -> Sigma [1.184] | Bound Error (RMSE): 0.019326
+    -> Sigma [1.263] | Bound Error (RMSE): 0.021608
+    -> Sigma [1.342] | Bound Error (RMSE): 0.023425
+    -> Sigma [1.421] | Bound Error (RMSE): 0.024291
+    -> Sigma [1.500] | Bound Error (RMSE): 0.025164
+[++++] Noise Evaluation Complete. Visual Diagnostics saved to results/noise_robustness/
+
+======================================================================
+[+] RUNNING CRITICAL LAYER ABLATION MATRIX
+======================================================================
+[*] Evaluating Full LNO Framework Architecture...
+[*] Evaluating Ablated Dissipation Space Module...
+[*] Evaluating Ablated Gamma Coupling Coefficients...
+
+==================== ABLATION MATRIX RESULTS ====================
+                            rmse       mae  entropy_error
+Full_LNO_Framework      0.001233  0.000539       0.031984
+Ablated_Dissipation     0.063966  0.024297       0.769123
+Ablated_Gamma_Coupling  0.002259  0.001735       0.075911
+=================================================================
+
+[++++] Ablation Matrix committed to disk successfully.
+
+======================================================================
+[+] INITIALIZING AUTOREGRESSIVE LONG-HORIZON STABILITY EXPERIMENT
+======================================================================
+[+] Loaded pre-trained weights for LNO Target Layers.
+[*] Simulating FNO Unbounded Horizon...
+[*] Simulating LNO Dissipation-Constrained Horizon...
+[++++] Stability Rollouts Compiled. Diagnostic plots committed to results/long_horizon/ plots.
