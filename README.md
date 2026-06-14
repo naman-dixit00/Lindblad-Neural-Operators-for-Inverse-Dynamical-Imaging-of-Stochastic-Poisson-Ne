@@ -58,7 +58,7 @@ The LNO architecture outperforms classical baselines (FNO/Koopman) in stability 
 | **Koopman** | 0.604441 | 0.554383 | 70.960995 | 0.194133 |
 | **LNO (Ours)** | **0.001233** | **0.000539** | **0.049419** | **86.951497** |
 
-### Ablation Matrix
+#### Ablation Matrix
 
 | Configuration | Validation RMSE ($\downarrow$) | Entropy Error ($\downarrow$) |
 | --- | --- | --- |
@@ -66,7 +66,7 @@ The LNO architecture outperforms classical baselines (FNO/Koopman) in stability 
 | Ablated Dissipation | 0.063966 | 0.769123 |
 | Ablated Coupling ($\gamma$) | 0.002259 | 0.075911 |
 
-### Long-Horizon Stability ($N=40$)
+#### Long-Horizon Stability ($N=40$)
 
 | Model | Energy Norm Drift ($\Delta E$) | Stability Status |
 | --- | --- | --- |
@@ -79,7 +79,7 @@ The LNO architecture outperforms classical baselines (FNO/Koopman) in stability 
 
 ### 06. PIPELINE EXECUTION
 
-### Setup
+#### Setup
 
 ```bash
 git clone https://github.com/Yuanli-AI-Research/lindblad-neural-operators.git
@@ -89,7 +89,7 @@ pip install -r requirements.txt
 ```
 <p align="center"> . . . </p>
 
-### Experimental Workflow
+#### Experimental Workflow
 
 1. **`01-data-gen.ipynb`**: Generate synthetic PNP trajectories.
 2. **`02-baselines.ipynb`**: Train reference FNO and Koopman models.
@@ -114,13 +114,14 @@ pip install -r requirements.txt
 > If you utilize this framework in your research, please cite:
 > 
 > ```bibtex
-> @article{yuanli2026lno,
+> @article{lno2026transport,
 >   title={Lindblad Neural Operators for Inverse Dynamical Imaging of Stochastic Poisson–Nernst–Planck Ion Transport in Neuronal Systems},
 >   author={Naman Dixit},
 >   journal={GitHub repository},
 >   year={2026},
 >   publisher={GitHub}
 > }
+> ```
 
 
 ### 09. LICENSE
