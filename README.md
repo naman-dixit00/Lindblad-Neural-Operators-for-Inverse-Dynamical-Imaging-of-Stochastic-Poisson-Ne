@@ -1,6 +1,6 @@
 # Lindblad Neural Operators for Inverse Dynamical Imaging of Stochastic Poisson–Nernst–Planck Ion Transport in Neuronal Systems
-
-**Project:** *An advanced physics-informed operator-learning framework mapping non-equilibrium electrodiffusive nanoscale transport processes.*
+> [!NOTE]
+> **Project:** *An advanced physics-informed operator-learning framework mapping non-equilibrium electrodiffusive nanoscale transport processes.*
 
 <div align="center">
 
@@ -10,16 +10,17 @@
 
 </div>
 
+<p align="center"> . . . </p>
 
-
-## Abstract
+### 01. ABSTRACT
 
 Ion transport in neuronal nanosystems is governed by highly stochastic, thermally coupled, and dissipative dynamics. At these scales, transport is perturbed by thermal noise and governed by irreversible, open-system thermodynamic environments. Classical solvers struggle with this multiscale stiffness, and standard operators (like FNO) fail under noise, suffering from catastrophic spectral explosions.
 
 The **Lindblad Neural Operator (LNO)** provides a new paradigm. By embedding open-system Lindblad master equations into a continuous function space architecture, the LNO uses a dissipative manifold $D(\rho)$ and $\gamma$ coupling coefficients to enforce thermodynamic boundedness. This enables stable forward simulation and precise inverse dynamical imaging.
 
+<p align="center"> . . . </p>
 
-## Core Novelty
+### 02. CORE NOVELTY
 
 Standard operators learn unconstrained mappings $u_{t+1} = \mathcal{G}_\theta(u_t)$. We introduce **Physics-Constrained Operator Evolution**:
 
@@ -31,8 +32,9 @@ The dissipative generator $\mathcal{L}$ restricts network transformations to phy
 * **Strict Energy Boundedness:** Solves the exploding gradient problem endemic to autoregressive unrolling.
 * **Entropy-Aware Dynamics:** Ensures local entropy production remains consistent with the Second Law of Thermodynamics.
 
+<p align="center"> . . . </p>
 
-## Inverse Dynamical Imaging
+### 03. INVERSE DYNAMICAL IMAGING
 
 This framework acts as a **computational dynamical imaging instrument**. By extracting latent macroscopic phenomena from noisy, stochastic nanoscale data, the LNO allows researchers to infer:
 
@@ -40,13 +42,15 @@ This framework acts as a **computational dynamical imaging instrument**. By extr
 * **Instability Emergence:** Detection of critical transport bottlenecks.
 * **Metastable Transitions:** Identification of transient structural shifts during ionic channel gating.
 
+<p align="center"> . . . </p>
 
-
-## Telemetry & Benchmarks
+### 04. TELEMETRY & BENCHMARKS
 
 The LNO architecture outperforms classical baselines (FNO/Koopman) in stability and accuracy.
 
-### Structural Metrics
+<p align="center"> . . . </p>
+
+### 05. STRUCTURAL METRICS
 
 | Architecture | RMSE ($\downarrow$) | MAE ($\downarrow$) | Mass Error ($\downarrow$) | Spectral Energy |
 | --- | --- | --- | --- | --- |
@@ -71,9 +75,9 @@ The LNO architecture outperforms classical baselines (FNO/Koopman) in stability 
 
 > **Robustness:** LNO maintains monotonic, bounded scaling even under extreme OOD thermal noise ($\sigma = 1.500$).
 
+<p align="center"> . . . </p>
 
-
-## Pipeline Execution
+### 06. PIPELINE EXECUTION
 
 ### Setup
 
@@ -83,6 +87,7 @@ cd lindblad-neural-operators
 pip install -r requirements.txt
 
 ```
+<p align="center"> . . . </p>
 
 ### Experimental Workflow
 
@@ -94,25 +99,32 @@ pip install -r requirements.txt
 
 *To execute the full pipeline:* `python run_pipeline.py`
 
+<p align="center"> . . . </p>
+
+### 07. CONTRIBUTING
+
+> [!WARNING]
+> **Open for Contributions**
+> We welcome contributions for adaptive data-driven jump operators or multi-scale grid alignments. Please open a Pull Request or create an Issue to discuss potential research extensions.
+
+### 08. CITATION
+
+> [!CAUTION]
+> **Cite this research**
+> If you utilize this framework in your research, please cite:
+> 
+> ```bibtex
+> @article{yuanli2026lno,
+>   title={Lindblad Neural Operators for Inverse Dynamical Imaging of Stochastic Poisson–Nernst–Planck Ion Transport in Neuronal Systems},
+>   author={Naman Dixit},
+>   journal={GitHub repository},
+>   year={2026},
+>   publisher={GitHub}
+> }
 
 
-## Contributing
+### 09. LICENSE
 
-We welcome contributions for adaptive data-driven jump operators or multi-scale grid alignments. Please open a Pull Request or create an Issue to discuss potential research extensions.
-
-## Citation
-
-If you utilize this framework in your research, please cite:
-
-```bibtex
-@article{yuanli2026lno,
-  title={Lindblad Neural Operators for Inverse Dynamical Imaging of Stochastic Poisson–Nernst–Planck Ion Transport in Neuronal Systems},
-  author={Naman Dixit},
-  journal={GitHub repository},
-  year={2026},
-  publisher={GitHub}
-}
-
-```
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+> [!IMPORTANT]
+> **MIT License**  
+> This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
