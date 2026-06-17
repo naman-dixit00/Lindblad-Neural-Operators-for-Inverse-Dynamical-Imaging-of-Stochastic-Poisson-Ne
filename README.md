@@ -109,7 +109,8 @@ pip install -r requirements.txt
 
 ### 08. CITATION
 
-> [!CAUTION]
+> [!TIP]
+> 
 > **Cite this research**
 > If you utilize this framework in your research, please cite:
 > 
@@ -125,8 +126,9 @@ pip install -r requirements.txt
 
 ### 09. REFERENCES & FOUNDATIONAL LITERATURE
 
-> [!TIP]
->
+
+> [!CAUTION]
+> 
 > ### 1. Neural Operators for Partial Differential Equations
 >
 > **Reference Source:**
@@ -146,7 +148,7 @@ pip install -r requirements.txt
 
 <p align="center"> . . . </p>
 
-> [!TIP]
+> [!CAUTION]
 >
 > ### 2. Poisson–Nernst–Planck Electrodiffusion Theory
 >
@@ -166,7 +168,7 @@ pip install -r requirements.txt
 
 <p align="center"> . . . </p>
 
-> [!TIP]
+> [!CAUTION]
 >
 > ### 3. Neuronal Membrane Ion Transport Dynamics
 >
@@ -193,7 +195,7 @@ pip install -r requirements.txt
 
 <p align="center"> . . . </p>
 
-> [!TIP]
+> [!CAUTION]
 >
 > ### 4. Open Quantum Systems & Lindblad Dynamics
 >
