@@ -211,7 +211,13 @@ pip install -r requirements.txt
 > **Contribution to this Framework:**
 > Introduces the mathematical framework of open quantum systems, density matrix evolution, dissipative coupling mechanisms, and contractive semigroup dynamics through Lindblad master equations. These principles motivate the framework's treatment of dissipation, stability, and physically constrained evolution operators.
 
-### 10. LICENSE
+### Future Directions & Extensions
+
+> IMPORTANT
+- **Microscopic Noise Modeling**: Integrating the **Langevin Equation** into the data-generation pipeline to simulate exact ion-trajectory fluctuations under Brownian motion, testing the LNO under extreme microscopic noise.
+- **Multi-Scale Physics Constraints**: Incorporating the **Fokker-Planck Equation** as a secondary regularizer in the loss function to enforce macroscopic probability density evolution alongside the quantum-level Lindblad constraints.
+
+### 11. LICENSE
 
 > [!IMPORTANT]
 > **MIT License**
