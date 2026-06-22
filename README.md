@@ -103,6 +103,7 @@ pip install -r requirements.txt
 
 
 ### 07. CONTRIBUTING
+
 > [!WARNING]
 > **Open for Contributions**
 > We welcome contributions for adaptive data-driven jump operators or multi-scale grid alignments. Please open a Pull Request or create an Issue to discuss potential research extensions.
@@ -127,88 +128,88 @@ pip install -r requirements.txt
 
 ### 09. REFERENCES & FOUNDATIONAL LITERATURE
 
-> [!NOTE]
-> ### 1. Neural Operators for Partial Differential Equations
-> 
-> 
-> **Reference Source:**
-> *Neural Operator for PDE.pdf*
-> ```bibtex
-> @article{neural_operators_pde,
->    title={Neural Operator for Partial Differential Equations},
->    note={As referenced in foundational architecture; file: Neural Operator for PDE.pdf},
->    year={2026}
-> }
-> 
-> ```
-> 
-> 
-> **Contribution to this Framework:**
-> Establishes the theoretical foundation for learning mappings between infinite-dimensional function spaces through neural operators. These concepts serve as the architectural backbone for operator-learning components and PDE surrogate modeling within the framework.
+### 1. Neural Operators for Partial Differential Equations
 
-> [!NOTE]
-> ### 2. Poisson–Nernst–Planck Electrodiffusion Theory
-> 
-> 
-> **Reference Source:**
-> *Possion Nerst Plank Equation for Biomolecular Diffusion.pdf*
-> ```bibtex
-> @article{pnp_biomolecular,
->    title={Poisson-Nernst-Planck Equation for Biomolecular Diffusion},
->    note={Governing electrodiffusive transport equations; file: Possion Nerst Plank Equation for Biomolecular Diffusion.pdf},
->    year={2026}
-> }
-> 
-> ```
-> 
-> 
-> **Contribution to this Framework:**
-> Provides the governing equations for ionic transport, charge conservation, and electrodiffusive dynamics in biological systems. The Poisson–Nernst–Planck formulation forms the basis for modeling spatial ion concentration evolution and membrane-associated transport processes
+**Reference Source:**
+*Neural Operator for PDE.pdf*
 
-> [!NOTE]
-> ### 3. Neuronal Membrane Ion Transport Dynamics
-> 
-> 
-> **Reference Source:**
-> *Screenshot (497).jpg*
-> *Screenshot (498).png*
-> ```bibtex
-> @article{xiang2017model,
->    title={A model of ion transport processes along and across the neuronal membrane},
->    author={Zuoxian, Xiang and Liu, G. Z. and Tang, C. X. and Yan, L. X.},
->    journal={Journal of Integrative Neuroscience},
->    volume={16},
->    number={1},
->    pages={33--55},
->    year={2017},
->    doi={10.3233/JIN-160002},
->    note={Visual context preserved in Screenshot (497).jpg and Screenshot (498).png}
-> }
-> 
-> ```
-> 
-> 
-> **Contribution to this Framework:**
-> Provides empirical and mathematical descriptions of transmembrane ion transport, intracellular and extracellular diffusion pathways, and stochastic ionic dynamics. These results inform the biological constraints incorporated into the electrodiffusive neural operator formulation.
+```bibtex
+@article{neural_operators_pde,
+   title={Neural Operator for Partial Differential Equations},
+   note={As referenced in foundational architecture; file: Neural Operator for PDE.pdf},
+   year={2026}
+}
 
-> [!NOTE]
-> ### 4. Open Quantum Systems & Lindblad Dynamics
-> 
-> 
-> **Reference Source:**
-> *Lindblad master equation approach to superconductivity in open quantum systems.pdf*
-> ```bibtex
-> @article{lindblad_open_systems,
->    title={Lindblad master equation approach to superconductivity in open quantum systems},
->    note={Mathematical framework for dissipative generators; file: Lindblad master equation approach to superconductivity in open quantum systems.pdf},
->    year={2026}
-> }
-> 
-> ```
-> 
-> 
-> **Contribution to this Framework:**
-> Introduces the mathematical framework of open quantum systems, density matrix evolution, dissipative coupling mechanisms, and contractive semigroup dynamics through Lindblad master equations. These principles motivate the framework's treatment of dissipation, stability, and physically constrained evolution operators.
+```
+
+**Contribution to this Framework:**
+Establishes the theoretical foundation for learning mappings between infinite-dimensional function spaces through neural operators. These concepts serve as the architectural backbone for operator-learning components and PDE surrogate modeling within the framework.
+
+<p align="center"> . . . </p>
+
+### 2. Poisson–Nernst–Planck Electrodiffusion Theory
+
+**Reference Source:**
+*Possion Nerst Plank Equation for Biomolecular Diffusion.pdf*
+
+```bibtex
+@article{pnp_biomolecular,
+   title={Poisson-Nernst-Planck Equation for Biomolecular Diffusion},
+   note={Governing electrodiffusive transport equations; file: Possion Nerst Plank Equation for Biomolecular Diffusion.pdf},
+   year={2026}
+}
+
+```
+
+**Contribution to this Framework:**
+Provides the governing equations for ionic transport, charge conservation, and electrodiffusive dynamics in biological systems. The Poisson–Nernst–Planck formulation forms the basis for modeling spatial ion concentration evolution and membrane-associated transport processes.
+
+<p align="center"> . . . </p>
+
+### 3. Neuronal Membrane Ion Transport Dynamics
+
+**Reference Source:**
+*Screenshot (497).jpg*
+*Screenshot (498).png*
+
+```bibtex
+@article{xiang2017model,
+   title={A model of ion transport processes along and across the neuronal membrane},
+   author={Zuoxian, Xiang and Liu, G. Z. and Tang, C. X. and Yan, L. X.},
+   journal={Journal of Integrative Neuroscience},
+   volume={16},
+   number={1},
+   pages={33--55},
+   year={2017},
+   doi={10.3233/JIN-160002},
+   note={Visual context preserved in Screenshot (497).jpg and Screenshot (498).png}
+}
+
+```
+
+**Contribution to this Framework:**
+Provides empirical and mathematical descriptions of transmembrane ion transport, intracellular and extracellular diffusion pathways, and stochastic ionic dynamics. These results inform the biological constraints incorporated into the electrodiffusive neural operator formulation.
+
+<p align="center"> . . . </p>
+
+### 4. Open Quantum Systems & Lindblad Dynamics
+
+**Reference Source:**
+*Lindblad master equation approach to superconductivity in open quantum systems.pdf*
+
+```bibtex
+@article{lindblad_open_systems,
+   title={Lindblad master equation approach to superconductivity in open quantum systems},
+   note={Mathematical framework for dissipative generators; file: Lindblad master equation approach to superconductivity in open quantum systems.pdf},
+   year={2026}
+}
+
+```
+
+**Contribution to this Framework:**
+Introduces the mathematical framework of open quantum systems, density matrix evolution, dissipative coupling mechanisms, and contractive semigroup dynamics through Lindblad master equations. These principles motivate the framework's treatment of dissipation, stability, and physically constrained evolution operators.
+
+<p align="center"> . . . </p>
 
 ### Future Directions & Extensions
 
