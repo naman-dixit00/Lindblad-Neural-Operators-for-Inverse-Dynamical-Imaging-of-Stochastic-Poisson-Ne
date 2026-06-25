@@ -53,6 +53,8 @@ The LNO architecture outperforms classical baselines (FNO/Koopman) in stability 
 
 ### 05. STRUCTURAL METRICS
 
+The Lindblad Neural Operator achieved a finalized test RMSE of 0.002026, demonstrating robust convergence across diverse stochastic transport regimes. The low variance in batch-wise error confirms that the learned dissipative constraints effectively prevent numerical drift, validating the LNO’s suitability for long-horizon dynamical forecasting in nanoscale neuronal systems.
+
 | Architecture | RMSE ($\downarrow$) | MAE ($\downarrow$) | Mass Error ($\downarrow$) | Spectral Energy |
 | --- | --- | --- | --- | --- |
 | **FNO (Baseline)** | 0.573130 | 0.520822 | 66.665235 | 0.220555 |
