@@ -6,7 +6,8 @@
 
 [![Colab Notebook](https://img.shields.io/badge/Run%20in-Google%20Colab-orange?logo=googlecolab)](https://colab.research.google.com/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Domain](https://img.shields.io/badge/Domain-Scientific%20ML%20%7C%20Computational%20Physics-black)]()
+[![Dataset (Harvard Dataverse)](https://img.shields.io/badge/Dataset-Harvard%20Dataverse-green)](https://dataverse.harvard.edu/dataverse/naman-dixit)
+[![DOI](https://img.shields.io/badge/DOI-10.7910%2FDVN%2FIUMEDG-blue)](https://doi.org/10.7910/DVN/IUMEDG)
 
 </div>
 
