@@ -1,0 +1,42 @@
+{
+  "dataset_name": "Environment-Conditioned LNO Dataset v2",
+  "transitions": 495,
+  "trajectory_timesteps": 100,
+  "spatial_points": 128,
+  "information_matrix_dimension": 6,
+  "input": "R_open(t)",
+  "target": "R_open(t+1)",
+  "environment_variables": [
+    "gamma",
+    "noise_sigma"
+  ],
+  "environmental_response": "R_open(t) - R_reference(t)",
+  "regimes": {
+    "low_noise": {
+      "noise_sigma": 0.02,
+      "gamma": 0.01
+    },
+    "stochastic": {
+      "noise_sigma": 0.45,
+      "gamma": 0.05
+    },
+    "heavy_dissipation": {
+      "noise_sigma": 0.15,
+      "gamma": 0.35
+    },
+    "collapse": {
+      "noise_sigma": 0.65,
+      "gamma": 0.5
+    },
+    "metastable": {
+      "noise_sigma": 0.3,
+      "gamma": 0.15
+    }
+  },
+  "information_state_definition": "R = z z^T / trace(z z^T)",
+  "important_note": "R is currently a mathematical internal-information representation. Its suitability as the physical state representation for the Lindblad-constrained kernel will be evaluated in Step 5.",
+  "mean_environment_information_response": 0.01279906090348959,
+  "median_environment_information_response": 0.0025250501930713654,
+  "p95_environment_information_response": 0.05550950765609741,
+  "max_environment_information_response": 0.7638888955116272
+}

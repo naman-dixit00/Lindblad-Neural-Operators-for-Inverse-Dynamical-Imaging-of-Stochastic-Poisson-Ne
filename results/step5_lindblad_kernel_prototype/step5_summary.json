@@ -1,0 +1,15 @@
+{
+  "representation": "R = z z^T / Tr(z z^T)",
+  "information_direction_cosine": 0.999999691488563,
+  "information_direction_error": 3.085114369748808e-07,
+  "single_step_trace_error": 1.1920928955078125e-07,
+  "single_step_symmetry_error": 0.0,
+  "single_step_min_eigenvalue": -1.87765033388132e-06,
+  "environment_monotonic": true,
+  "gradient_pass": true,
+  "jump_gradient_l2": 9.136638823292742e-08,
+  "alpha_gradient": 2.05962802368731e-09,
+  "rollout_min_eigenvalue": -1.87765033388132e-06,
+  "rollout_max_norm": 3.999992847442627,
+  "rollout_max_trace_error": 1.7881393432617188e-07
+}

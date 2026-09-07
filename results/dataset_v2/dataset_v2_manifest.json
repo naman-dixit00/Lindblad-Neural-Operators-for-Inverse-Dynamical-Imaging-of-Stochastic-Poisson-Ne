@@ -1,0 +1,38 @@
+{
+  "dataset": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/dataset_v2/environment_conditioned_lno_dataset_v2.npz",
+  "metadata": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/dataset_v2/dataset_metadata.csv",
+  "summary": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/dataset_v2/dataset_v2_summary.json",
+  "X_information_shape": [
+    495,
+    128,
+    6,
+    6
+  ],
+  "Y_information_shape": [
+    495,
+    128,
+    6,
+    6
+  ],
+  "X_state_shape": [
+    495,
+    128
+  ],
+  "Y_state_shape": [
+    495,
+    128
+  ],
+  "environment_shape": [
+    495,
+    128,
+    2
+  ],
+  "environment_response_shape": [
+    495,
+    128,
+    6,
+    6
+  ],
+  "regime_count": 5,
+  "total_transitions": 495
+}
