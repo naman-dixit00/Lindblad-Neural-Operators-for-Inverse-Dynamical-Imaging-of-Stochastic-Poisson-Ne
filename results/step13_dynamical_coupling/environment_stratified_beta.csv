@@ -1,0 +1,2 @@
+environment_region,gamma_lower,gamma_upper,samples,best_beta,best_relative_L2
+strong,0.3,0.6,16,10.0,0.9995683431625366

@@ -1,0 +1,38 @@
+{
+  "step": 13,
+  "purpose": "Dynamical coupling calibration",
+  "prototype": true,
+  "batch_size": 16,
+  "dt": 0.001,
+  "betas_tested": [
+    0.01,
+    0.025,
+    0.05,
+    0.1,
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    5.0,
+    10.0
+  ],
+  "best_beta": 10.0,
+  "best_relative_L2": 0.9995682239532471,
+  "best_RMSE": 0.15345153212547302,
+  "continuous_least_squares_beta": 15.809717178344727,
+  "target_transition_norm": 41.68445587158203,
+  "lindblad_transition_norm": 0.027028841897845268,
+  "neural_transition_norm_beta_1": 0.04525480046868324,
+  "checkpoint": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step12_ablation/D_Full_LNO.pt",
+  "environment_stratified_results": [
+    {
+      "environment_region": "strong",
+      "gamma_lower": 0.3,
+      "gamma_upper": 0.6,
+      "samples": 16,
+      "best_beta": 10.0,
+      "best_relative_L2": 0.9995683431625366
+    }
+  ],
+  "next_step": "Use calibrated coupling in a controlled retraining experiment, then expand to independent trajectories."
+}
