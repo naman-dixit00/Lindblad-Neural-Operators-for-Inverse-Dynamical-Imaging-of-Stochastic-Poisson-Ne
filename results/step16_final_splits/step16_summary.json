@@ -1,0 +1,51 @@
+{
+  "step": 16,
+  "dataset": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/dataset_v3_expanded/environment_conditioned_lno_dataset_v3_expanded.npz",
+  "total_transitions": 9900,
+  "total_trajectories": 100,
+  "spatial_points": 128,
+  "information_dimension": 6,
+  "seed": 2026,
+  "split_policy": "trajectory-level stratified split",
+  "train_trajectories": 70,
+  "validation_trajectories": 15,
+  "test_trajectories": 15,
+  "train_transitions": 6930,
+  "validation_transitions": 1485,
+  "test_transitions": 1485,
+  "regime_trajectories_per_split": {
+    "collapse": {
+      "train": 14,
+      "validation": 3,
+      "test": 3
+    },
+    "heavy_dissipation": {
+      "train": 14,
+      "validation": 3,
+      "test": 3
+    },
+    "low_noise": {
+      "train": 14,
+      "validation": 3,
+      "test": 3
+    },
+    "metastable": {
+      "train": 14,
+      "validation": 3,
+      "test": 3
+    },
+    "stochastic": {
+      "train": 14,
+      "validation": 3,
+      "test": 3
+    }
+  },
+  "trajectory_overlap": false,
+  "temporal_leakage": false,
+  "environment_all_splits": true,
+  "outputs": {
+    "split_npz": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step16_final_splits/final_trajectory_level_split.npz",
+    "transition_manifest": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step16_final_splits/final_transition_manifest.csv",
+    "trajectory_manifest": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step16_final_splits/final_trajectory_manifest.csv"
+  }
+}
