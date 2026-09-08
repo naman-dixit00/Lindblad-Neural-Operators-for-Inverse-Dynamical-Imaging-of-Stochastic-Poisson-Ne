@@ -1,0 +1,48 @@
+{
+  "step": 17,
+  "model": "FinalFNO",
+  "prototype": false,
+  "dataset": "Dataset V3 Expanded",
+  "total_transitions": 9900,
+  "train_transitions": 6930,
+  "validation_transitions": 1485,
+  "test_transitions": 1485,
+  "spatial_points": 128,
+  "information_dimension": 6,
+  "parameters": 545893,
+  "best_epoch": 14,
+  "best_validation_loss": 0.09447503048700817,
+  "max_epochs": 40,
+  "batch_size": 16,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "test_metrics": {
+    "R_MSE": 0.007409939542412758,
+    "R_RMSE": 0.08608100563287735,
+    "R_MAE": 0.04715707525610924,
+    "R_relative_L2": 0.5164903998374939,
+    "amplitude_MSE": 0.17168866097927094,
+    "amplitude_RMSE": 0.41435331106185913,
+    "amplitude_MAE": 0.23785291612148285,
+    "amplitude_relative_L2": 0.17607641220092773
+  },
+  "structural_diagnostics": {
+    "mean_trace_error": 0.011498193256556988,
+    "max_trace_error": 0.1505589485168457,
+    "symmetry_error": 0.0,
+    "minimum_eigenvalue": -0.7177095413208008,
+    "negative_eigenvalue_fraction": 0.34079599380493164,
+    "predictions_finite": true
+  },
+  "amplitude_normalization": {
+    "mean": 1.9057456254959106,
+    "std": 1.5546519756317139
+  },
+  "physics_constraint": false,
+  "lindblad_kernel": false,
+  "split": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step16_final_splits/final_trajectory_level_split.npz",
+  "checkpoint": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step17_final_fno/fno_final_best.pt",
+  "history": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step17_final_fno/fno_final_training_history.csv",
+  "predictions": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step17_final_fno/fno_final_test_predictions.npz",
+  "regime_metrics": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step17_final_fno/fno_final_regime_metrics.csv"
+}
