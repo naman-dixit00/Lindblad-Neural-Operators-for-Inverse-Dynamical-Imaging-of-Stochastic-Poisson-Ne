@@ -1,0 +1,34 @@
+{
+  "dataset_name": "Environment-Conditioned LNO Dataset V3",
+  "testing_dataset": true,
+  "final_training_dataset": false,
+  "total_transitions": 495,
+  "timesteps_per_trajectory": 100,
+  "spatial_points": 128,
+  "information_dimension": 6,
+  "input_representation": "(R(t), amplitude(t), gamma, noise_sigma)",
+  "target_representation": "(R(t+1), amplitude(t+1))",
+  "R_definition": "R = z z^T / Tr(z z^T)",
+  "amplitude_definition": "a = ||z||",
+  "feature_names": [
+    "state",
+    "phi",
+    "flux",
+    "noise",
+    "dissipation",
+    "instability"
+  ],
+  "environment_variables": [
+    "gamma",
+    "noise_sigma"
+  ],
+  "environment_response": "R_open - R_reference",
+  "amplitude_environment_response": "a_open - a_reference",
+  "mean_delta_R": 0.01279906090348959,
+  "p95_delta_R": 0.055509522557258606,
+  "max_delta_R": 0.7638888955116272,
+  "mean_abs_delta_amplitude": 0.008742429316043854,
+  "max_abs_delta_amplitude": 5.641246795654297,
+  "source": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step3_paired_trajectories",
+  "dataset_path": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/dataset_v3/environment_conditioned_lno_dataset_v3.npz"
+}
