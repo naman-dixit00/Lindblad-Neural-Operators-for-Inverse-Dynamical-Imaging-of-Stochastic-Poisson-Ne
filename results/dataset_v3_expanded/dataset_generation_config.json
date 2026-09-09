@@ -1,0 +1,39 @@
+{
+  "step": 15,
+  "trajectories_per_regime": 20,
+  "total_trajectories": 100,
+  "total_transitions": 9900,
+  "regimes": {
+    "low_noise": {
+      "noise_sigma": 0.02,
+      "gamma": 0.01
+    },
+    "stochastic": {
+      "noise_sigma": 0.45,
+      "gamma": 0.05
+    },
+    "heavy_dissipation": {
+      "noise_sigma": 0.15,
+      "gamma": 0.35
+    },
+    "collapse": {
+      "noise_sigma": 0.65,
+      "gamma": 0.5
+    },
+    "metastable": {
+      "noise_sigma": 0.3,
+      "gamma": 0.15
+    }
+  },
+  "reference_gamma": 0.0,
+  "base_seed": 150000,
+  "pairing": "same NumPy seed for open/reference; different gamma",
+  "initial_condition_diversity": false,
+  "initial_condition_reason": "Current PhysicsOperatorSimulator API does not expose an initial-state argument.",
+  "representation": {
+    "z": "[state, phi, flux, noise, dissipation, instability]",
+    "R": "z z^T / Tr(z z^T)",
+    "amplitude": "||z||"
+  },
+  "source_config": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/config.yaml"
+}
