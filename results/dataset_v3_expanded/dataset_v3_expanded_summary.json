@@ -1,0 +1,55 @@
+{
+  "step": 15,
+  "dataset_name": "Environment-Conditioned LNO Dataset V3 Expanded",
+  "total_trajectories": 100,
+  "trajectories_per_regime": 20,
+  "timesteps_per_trajectory": 100,
+  "transitions_per_trajectory": 99,
+  "total_transitions": 9900,
+  "spatial_points": 128,
+  "information_dimension": 6,
+  "paired_noise_verified": true,
+  "maximum_paired_noise_error": 0.0,
+  "R_trace_max_error": 1.1920928955078125e-07,
+  "R_symmetry_max_error": 0.0,
+  "representative_minimum_eigenvalue": -3.1958528268205555e-08,
+  "mean_environment_R_response": 0.012748188339173794,
+  "p95_environment_R_response": 0.05536634474992752,
+  "max_environment_R_response": 0.7490186095237732,
+  "mean_environment_amplitude_response": 0.008792778477072716,
+  "initial_condition_diversity": false,
+  "normalization": {
+    "state": {
+      "mean": 0.5548129878450185,
+      "std": 0.24359092530484333
+    },
+    "phi": {
+      "mean": 1.7314053793034823,
+      "std": 0.8872234044610805
+    },
+    "flux": {
+      "mean": -0.30702852017599214,
+      "std": 3.154181525507752
+    },
+    "noise": {
+      "mean": 0.0015736003379067508,
+      "std": 0.09471240626067116
+    },
+    "dissipation": {
+      "mean": 1.7859232930644866,
+      "std": 15.508198854794617
+    },
+    "instability": {
+      "mean": 0.07716168485004359,
+      "std": 0.1252351865179911
+    }
+  },
+  "outputs": {
+    "dataset": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/dataset_v3_expanded/environment_conditioned_lno_dataset_v3_expanded.npz",
+    "metadata": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/dataset_v3_expanded/dataset_v3_expanded_metadata.csv",
+    "trajectory_metadata": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/dataset_v3_expanded/trajectory_metadata.csv",
+    "regime_summary": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/dataset_v3_expanded/regime_summary.csv",
+    "normalization": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/dataset_v3_expanded/global_feature_normalization.json",
+    "generation_config": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/dataset_v3_expanded/dataset_generation_config.json"
+  }
+}
