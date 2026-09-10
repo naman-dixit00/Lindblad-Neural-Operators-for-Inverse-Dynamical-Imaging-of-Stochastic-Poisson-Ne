@@ -1,0 +1,83 @@
+{
+  "figure_pack": "Step 18 Publication-Quality Square Figure Pack \u2014 LNO Dynamics",
+  "source": "Step 18 Final Repaired LNO artifacts",
+  "training_performed": false,
+  "geometry": {
+    "width_inch": 3.5,
+    "height_inch": 3.5,
+    "aspect_ratio": "1:1"
+  },
+  "raster_dpi": 600,
+  "best_epoch": 10,
+  "best_epoch_kappa_lindblad": 0.9659502506256104,
+  "best_epoch_kappa_neural": 1.630049228668213,
+  "figures": [
+    {
+      "id": 1,
+      "name": "01_training_convergence",
+      "description": "Train and validation total loss"
+    },
+    {
+      "id": 2,
+      "name": "02_decomposed_learning",
+      "description": "R and amplitude learning components"
+    },
+    {
+      "id": 3,
+      "name": "03_learned_couplings",
+      "description": "Learned Lindblad and neural couplings"
+    },
+    {
+      "id": 4,
+      "name": "04_environment_R_response",
+      "description": "Controlled gamma sweep of R response"
+    },
+    {
+      "id": 5,
+      "name": "05_environment_amplitude_response",
+      "description": "Controlled gamma sweep of amplitude response"
+    },
+    {
+      "id": 6,
+      "name": "06_regime_R_relative_L2",
+      "description": "R relative-L2 error by environment regime"
+    },
+    {
+      "id": 7,
+      "name": "07_regime_amplitude_relative_L2",
+      "description": "Amplitude relative-L2 error by regime"
+    },
+    {
+      "id": 8,
+      "name": "08_rollout_R_norm",
+      "description": "Representative 40-step R rollout"
+    },
+    {
+      "id": 9,
+      "name": "09_rollout_minimum_eigenvalue",
+      "description": "Representative rollout minimum eigenvalue"
+    },
+    {
+      "id": 10,
+      "name": "10_rollout_trace_error",
+      "description": "Representative rollout trace preservation"
+    },
+    {
+      "id": 11,
+      "name": "11_test_R_error_distribution",
+      "description": "Distribution of per-transition R RMSE"
+    },
+    {
+      "id": 12,
+      "name": "12_test_amplitude_error_distribution",
+      "description": "Distribution of per-transition amplitude RMSE"
+    }
+  ],
+  "formats": [
+    "PNG",
+    "SVG",
+    "PDF",
+    "Combined PDF"
+  ],
+  "combined_pdf": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step18_final_lno/figures_square/step18_square_figure_pack.pdf"
+}
