@@ -1,0 +1,43 @@
+====================================================================================================
+STEP 20 — OOD SIGMA SWEEP REPORT
+====================================================================================================
+
+Training sigma maximum: 0.65
+Sigma values tested: [0.65, 0.75, 0.85, 1.0, 1.25]
+
+IMPORTANT:
+Model-only OOD response and structural-stability diagnostic. True OOD accuracy requires new ground-truth trajectories at unseen sigma.
+
+FNO OOD DIAGNOSTICS
+------------------------------------------------------------
+Minimum eigenvalue: -6.558756828308e-01
+Maximum trace error: 2.058907151222e-01
+Maximum negative-eigenvalue fraction: 0.31860444
+All finite: True
+Response monotonic: True
+
+LNO OOD DIAGNOSTICS
+------------------------------------------------------------
+Minimum eigenvalue: -3.280122200522e-07
+Maximum trace error: 2.384185791016e-07
+Maximum negative-eigenvalue fraction: 0.00000000
+All finite: True
+Response monotonic: True
+
+FULL RESULT TABLE
+------------------------------------------------------------
+model  sigma   ood     R_norm  amplitude_norm  mean_trace_error  max_trace_error  minimum_eigenvalue  negative_eigenvalue_fraction  finite  sigma_response_from_0p65  Lindblad_delta_norm  Neural_delta_norm
+  FNO   0.65 False 333.853149      379.777985      1.502851e-02     1.536100e-01       -6.636797e-01                      0.337269    True                  0.000000                  NaN                NaN
+  LNO   0.65 False 337.063110      369.972290      2.191932e-08     2.384186e-07       -2.841784e-07                      0.000000    True                  0.000000           147.739761        1191.727661
+  FNO   0.75  True 330.694305      387.051697      1.598477e-02     1.569674e-01       -6.558757e-01                      0.318604    True                 27.020363                  NaN                NaN
+  LNO   0.75  True 336.105530      371.752747      2.068916e-08     2.384186e-07       -2.895388e-07                      0.000000    True                 22.564613           147.739761        1188.444702
+  FNO   0.85  True 326.412170      397.128754      1.709591e-02     1.566129e-01       -6.501500e-01                      0.295626    True                 48.045052                  NaN                NaN
+  LNO   0.85  True 337.297455      375.570282      1.992874e-08     2.384186e-07       -3.216093e-07                      0.000000    True                 48.223049           147.739761        1188.032104
+  FNO   1.00  True 317.330719      414.282410      1.916948e-02     1.722091e-01       -6.465506e-01                      0.264556    True                 72.934731                  NaN                NaN
+  LNO   1.00  True 343.512573      383.456207      1.944646e-08     2.384186e-07       -3.280122e-07                      0.000000    True                 92.561188           147.739761        1204.045044
+  FNO   1.25  True 301.981110      441.763580      2.378318e-02     2.058907e-01       -6.554084e-01                      0.244783    True                112.512077                  NaN                NaN
+  LNO   1.25  True 358.642548      398.157806      1.858004e-08     2.384186e-07       -3.057569e-07                      0.000000    True                158.628006           147.739761        1275.074463
+
+====================================================================================================
+END OF STEP 20 REPORT
+====================================================================================================

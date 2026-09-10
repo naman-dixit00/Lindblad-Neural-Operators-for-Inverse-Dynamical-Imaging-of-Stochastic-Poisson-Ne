@@ -1,0 +1,33 @@
+{
+  "step": 20,
+  "title": "OOD Sigma Sweep",
+  "training_sigma_max": 0.65,
+  "sigma_values": [
+    0.65,
+    0.75,
+    0.85,
+    1.0,
+    1.25
+  ],
+  "true_ood_accuracy": false,
+  "description": "Model-only OOD response and structural-stability diagnostic. True OOD accuracy requires new ground-truth trajectories at unseen sigma.",
+  "FNO": {
+    "ood_max_trace_error": 0.2058907151222229,
+    "ood_minimum_eigenvalue": -0.6558756828308105,
+    "ood_max_negative_eigenvalue_fraction": 0.318604439496994,
+    "all_finite": true,
+    "response_monotonic": true
+  },
+  "LNO": {
+    "ood_max_trace_error": 2.384185791015625e-07,
+    "ood_minimum_eigenvalue": -3.2801222005218733e-07,
+    "ood_max_negative_eigenvalue_fraction": 0.0,
+    "all_finite": true,
+    "response_monotonic": true
+  },
+  "outputs": {
+    "csv": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step20_ood_sigma/ood_sigma_results.csv",
+    "plot": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step20_ood_sigma/ood_sigma_stability.png",
+    "summary": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step20_ood_sigma/ood_sigma_summary.json"
+  }
+}
