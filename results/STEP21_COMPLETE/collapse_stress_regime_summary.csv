@@ -1,0 +1,2 @@
+regime,transitions,FNO_worst_minimum_eigenvalue,LNO_worst_minimum_eigenvalue,FNO_worst_trace_error,LNO_worst_trace_error,FNO_worst_negative_eigenvalue_fraction,LNO_worst_negative_eigenvalue_fraction,FNO_all_finite,LNO_all_finite,LNO_structurally_better
+collapse,297,-0.6636796593666077,-3.092692395512131e-07,0.19489479064941406,1.6808509826660156e-05,0.3205667734146118,0.0,True,True,True

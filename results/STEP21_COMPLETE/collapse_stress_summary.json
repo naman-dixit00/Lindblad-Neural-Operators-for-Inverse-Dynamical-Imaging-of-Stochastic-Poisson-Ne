@@ -1,0 +1,71 @@
+{
+  "step": 21,
+  "title": "Collapse Stress Test",
+  "test_regime": "collapse",
+  "collapse_test_transitions": 297,
+  "stress_levels": [
+    {
+      "level": 0,
+      "gamma": 0.5,
+      "sigma": 0.65,
+      "label": "baseline_collapse"
+    },
+    {
+      "level": 1,
+      "gamma": 0.6,
+      "sigma": 0.75,
+      "label": "collapse_stress_1"
+    },
+    {
+      "level": 2,
+      "gamma": 0.7,
+      "sigma": 0.85,
+      "label": "collapse_stress_2"
+    },
+    {
+      "level": 3,
+      "gamma": 0.8,
+      "sigma": 1.0,
+      "label": "collapse_stress_3"
+    },
+    {
+      "level": 4,
+      "gamma": 0.9,
+      "sigma": 1.15,
+      "label": "collapse_stress_4"
+    },
+    {
+      "level": 5,
+      "gamma": 1.0,
+      "sigma": 1.3,
+      "label": "collapse_stress_5"
+    }
+  ],
+  "ground_truth_accuracy_claim": false,
+  "diagnostic_type": "Counterfactual environment-response and structural-stability stress test.",
+  "FNO": {
+    "worst_minimum_eigenvalue": -0.6636796593666077,
+    "worst_max_trace_error": 0.19489479064941406,
+    "worst_negative_eigenvalue_fraction": 0.3205667734146118,
+    "all_finite": true
+  },
+  "LNO": {
+    "worst_minimum_eigenvalue": -3.092692395512131e-07,
+    "worst_max_trace_error": 1.6808509826660156e-05,
+    "worst_negative_eigenvalue_fraction": 0.0,
+    "all_finite": true,
+    "representative_40_step_rollout_finite": true,
+    "representative_40_step_rollout_minimum_eigenvalue": -3.330194715545076e-07,
+    "representative_40_step_rollout_max_trace_error": 2.384185791015625e-07
+  },
+  "structural_comparison": {
+    "LNO_better": true
+  },
+  "outputs": {
+    "results": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step21_collapse_stress/collapse_stress_results.csv",
+    "rollout": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step21_collapse_stress/collapse_stress_rollout.csv",
+    "regime_summary": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step21_collapse_stress/collapse_stress_regime_summary.csv",
+    "plot": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step21_collapse_stress/collapse_stress_response.png",
+    "summary": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step21_collapse_stress/collapse_stress_summary.json"
+  }
+}
