@@ -1,0 +1,78 @@
+{
+  "step": 18,
+  "model": "FinalRepairedLNO",
+  "prototype": false,
+  "fresh_initialization": true,
+  "dataset": "Dataset V3 Expanded",
+  "total_transitions": 9900,
+  "train_transitions": 6930,
+  "validation_transitions": 1485,
+  "test_transitions": 1485,
+  "spatial_points": 128,
+  "information_dimension": 6,
+  "parameters": 546039,
+  "best_epoch": 10,
+  "best_validation_loss": 0.09505376114763997,
+  "training": {
+    "max_epochs": 40,
+    "batch_size": 16,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "early_stopping_patience": 8
+  },
+  "amplitude_normalization": {
+    "mean": 1.9057456254959106,
+    "std": 1.5546519756317139
+  },
+  "test_metrics": {
+    "R_MSE": 0.007555846590548754,
+    "R_RMSE": 0.08692437410354614,
+    "R_MAE": 0.045529674738645554,
+    "R_relative_L2": 0.5215809941291809,
+    "amplitude_MSE": 0.17097876965999603,
+    "amplitude_RMSE": 0.4134957790374756,
+    "amplitude_MAE": 0.24025361239910126,
+    "amplitude_relative_L2": 0.17571207880973816
+  },
+  "structural_diagnostics": {
+    "mean_trace_error": 2.837993839932551e-08,
+    "max_trace_error": 2.384185791015625e-07,
+    "symmetry_error": 8.940696716308594e-08,
+    "minimum_eigenvalue": -3.2853321840775607e-07,
+    "negative_eigenvalue_fraction": 0.1837621033191681,
+    "predictions_finite": true
+  },
+  "dynamical_components": {
+    "target_delta_R_norm": 306.79522705078125,
+    "lindblad_delta_R_norm": 147.73976135253906,
+    "neural_delta_R_norm": 1172.968994140625,
+    "combined_delta_R_norm": 1170.2130126953125,
+    "kappa_lindblad": 0.9659502506256104,
+    "kappa_neural": 1.630049228668213
+  },
+  "rollout": {
+    "steps": 40,
+    "minimum_eigenvalue": -2.6568937983029173e-07,
+    "maximum_trace_error": 0.0,
+    "finite": true,
+    "stable": true
+  },
+  "physics": {
+    "lindblad_in_forward_path": true,
+    "physics_loss_penalty": false,
+    "positive_lindblad_coupling": true,
+    "positive_neural_coupling": true
+  },
+  "checkpoints": {
+    "best": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step18_final_lno/lno_final_best.pt",
+    "last": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step18_final_lno/lno_final_last.pt"
+  },
+  "outputs": {
+    "history": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step18_final_lno/lno_final_training_history.csv",
+    "predictions": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step18_final_lno/lno_final_test_predictions.npz",
+    "environment_response": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step18_final_lno/lno_final_environment_response.csv",
+    "rollout": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step18_final_lno/lno_final_rollout_stability.csv",
+    "regime_metrics": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step18_final_lno/lno_final_regime_metrics.csv",
+    "summary": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step18_final_lno/lno_final_summary.json"
+  }
+}
