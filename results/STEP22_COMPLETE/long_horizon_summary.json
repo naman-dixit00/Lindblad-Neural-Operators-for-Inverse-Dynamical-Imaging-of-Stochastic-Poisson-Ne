@@ -1,0 +1,52 @@
+{
+  "step": 22,
+  "title": "Long-Horizon Rollout Stability",
+  "diagnostic_type": "Repeated-forward stability and structural-preservation diagnostic.",
+  "ground_truth_accuracy_claim": false,
+  "representative_states": 25,
+  "representatives_per_regime": 5,
+  "rollout_steps": 100,
+  "regimes": [
+    "low_noise",
+    "stochastic",
+    "heavy_dissipation",
+    "collapse",
+    "metastable"
+  ],
+  "FNO": {
+    "model": "FNO",
+    "rollout_steps": 100,
+    "worst_minimum_eigenvalue": -54929.453125,
+    "worst_max_trace_error": 23389.328125,
+    "worst_negative_eigenvalue_fraction": 0.40843749046325684,
+    "max_R_norm": 1121672.0,
+    "min_R_norm": 47.81871795654297,
+    "max_amplitude_norm": 3731312.75,
+    "min_amplitude_norm": 46.61872100830078,
+    "all_finite": true
+  },
+  "LNO": {
+    "model": "LNO",
+    "rollout_steps": 100,
+    "worst_minimum_eigenvalue": -2.8635551529987424e-07,
+    "worst_max_trace_error": 1.1920928955078125e-07,
+    "worst_negative_eigenvalue_fraction": 0.0,
+    "max_R_norm": 49.41068649291992,
+    "min_R_norm": 47.114707946777344,
+    "max_amplitude_norm": 83.23006439208984,
+    "min_amplitude_norm": 41.1758918762207,
+    "all_finite": true
+  },
+  "structural_comparison": {
+    "LNO_structurally_better": true
+  },
+  "outputs": {
+    "rollout_csv": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step22_long_horizon/long_horizon_rollout.csv",
+    "summary_csv": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step22_long_horizon/long_horizon_summary.csv",
+    "representative_states": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step22_long_horizon/representative_rollout_states.csv",
+    "R_norm_plot": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step22_long_horizon/long_horizon_R_norm.png",
+    "trace_plot": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step22_long_horizon/long_horizon_trace_error.png",
+    "eigenvalue_plot": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step22_long_horizon/long_horizon_minimum_eigenvalue.png",
+    "summary_json": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step22_long_horizon/long_horizon_summary.json"
+  }
+}
