@@ -1,0 +1,178 @@
+{
+  "step": 19,
+  "title": "Final FNO vs Final Repaired LNO Comparison",
+  "fair_comparison": {
+    "same_test_indices": true,
+    "same_targets": true,
+    "same_environment": true,
+    "test_transitions": 1485
+  },
+  "overall": {
+    "FNO": {
+      "R": {
+        "MSE": 0.007409939160473891,
+        "RMSE": 0.08608100348203367,
+        "MAE": 0.04715707307632913,
+        "Relative-L2": 0.5164860208777802
+      },
+      "amplitude": {
+        "MSE": 0.1716886589381651,
+        "RMSE": 0.4143533020722353,
+        "MAE": 0.2378529262647459,
+        "Relative-L2": 0.17607665358020497
+      },
+      "structural": {
+        "mean_trace_error": 0.011498193715819735,
+        "max_trace_error": 0.15055890381336212,
+        "minimum_eigenvalue": -0.7177094565304319,
+        "negative_eigenvalue_fraction": 0.3407845819304153,
+        "mean_symmetry_error": 0.0
+      }
+    },
+    "LNO": {
+      "R": {
+        "MSE": 0.007555846831839723,
+        "RMSE": 0.08692437421022783,
+        "MAE": 0.04552967560179763,
+        "Relative-L2": 0.5215462452468018
+      },
+      "amplitude": {
+        "MSE": 0.17097876919994637,
+        "RMSE": 0.413495791030509,
+        "MAE": 0.24025361633292,
+        "Relative-L2": 0.17571226002069873
+      },
+      "structural": {
+        "mean_trace_error": 3.4666830992200254e-08,
+        "max_trace_error": 1.9650906324386597e-07,
+        "minimum_eigenvalue": -7.539971437457684e-08,
+        "negative_eigenvalue_fraction": 0.0,
+        "mean_symmetry_error": 1.7890053992258284e-09
+      }
+    }
+  },
+  "relative_change": [
+    {
+      "metric": "R_RMSE",
+      "FNO": 0.08608100348203367,
+      "LNO": 0.08692437421022783,
+      "LNO_percent_change_vs_FNO": 0.9797408186120805
+    },
+    {
+      "metric": "R_Relative_L2",
+      "FNO": 0.5164860208777802,
+      "LNO": 0.5215462452468018,
+      "LNO_percent_change_vs_FNO": 0.9797408186211662
+    },
+    {
+      "metric": "Amplitude_RMSE",
+      "FNO": 0.4143533020722353,
+      "LNO": 0.413495791030509,
+      "LNO_percent_change_vs_FNO": -0.20695166116348712
+    },
+    {
+      "metric": "Amplitude_Relative_L2",
+      "FNO": 0.17607665358020497,
+      "LNO": 0.17571226002069873,
+      "LNO_percent_change_vs_FNO": -0.20695166116283695
+    },
+    {
+      "metric": "Mean_trace_error",
+      "FNO": 0.011498193715819735,
+      "LNO": 3.4666830992200254e-08,
+      "LNO_percent_change_vs_FNO": -99.99969849324296
+    },
+    {
+      "metric": "Max_trace_error",
+      "FNO": 0.15055890381336212,
+      "LNO": 1.9650906324386597e-07,
+      "LNO_percent_change_vs_FNO": -99.99986947961345
+    }
+  ],
+  "regime_comparison": [
+    {
+      "regime": "low_noise",
+      "transitions": 297,
+      "R_relative_L2_FNO": 0.15552036697720625,
+      "R_relative_L2_LNO": 0.1420364710949597,
+      "R_relative_L2_change_percent": -8.670180082674385,
+      "amplitude_relative_L2_FNO": 0.030189459312466815,
+      "amplitude_relative_L2_LNO": 0.04080769267983469,
+      "Amplitude_relative_L2_change_percent": 35.17198919369625,
+      "R_winner": "LNO",
+      "Amplitude_winner": "FNO"
+    },
+    {
+      "regime": "stochastic",
+      "transitions": 297,
+      "R_relative_L2_FNO": 0.6222805198645674,
+      "R_relative_L2_LNO": 0.6385517152947444,
+      "R_relative_L2_change_percent": 2.6147685667055858,
+      "amplitude_relative_L2_FNO": 0.19108040981140387,
+      "amplitude_relative_L2_LNO": 0.19111660177510684,
+      "Amplitude_relative_L2_change_percent": 0.018940698179631038,
+      "R_winner": "FNO",
+      "Amplitude_winner": "FNO"
+    },
+    {
+      "regime": "heavy_dissipation",
+      "transitions": 297,
+      "R_relative_L2_FNO": 0.4147349015005695,
+      "R_relative_L2_LNO": 0.4186099947285537,
+      "R_relative_L2_change_percent": 0.9343542619524435,
+      "amplitude_relative_L2_FNO": 0.049969792794455646,
+      "amplitude_relative_L2_LNO": 0.05671903645944022,
+      "Amplitude_relative_L2_change_percent": 13.506647291117776,
+      "R_winner": "FNO",
+      "Amplitude_winner": "FNO"
+    },
+    {
+      "regime": "collapse",
+      "transitions": 297,
+      "R_relative_L2_FNO": 0.6634785719662728,
+      "R_relative_L2_LNO": 0.6619827814668664,
+      "R_relative_L2_change_percent": -0.22544669302148684,
+      "amplitude_relative_L2_FNO": 0.27615371134907885,
+      "amplitude_relative_L2_LNO": 0.2728931080563917,
+      "Amplitude_relative_L2_change_percent": -1.1807204316561486,
+      "R_winner": "LNO",
+      "Amplitude_winner": "LNO"
+    },
+    {
+      "regime": "metastable",
+      "transitions": 297,
+      "R_relative_L2_FNO": 0.5569206091466218,
+      "R_relative_L2_LNO": 0.5645123973779783,
+      "R_relative_L2_change_percent": 1.3631724354708148,
+      "amplitude_relative_L2_FNO": 0.1185306400237221,
+      "amplitude_relative_L2_LNO": 0.12056734552996061,
+      "Amplitude_relative_L2_change_percent": 1.7182945319570626,
+      "R_winner": "FNO",
+      "Amplitude_winner": "FNO"
+    }
+  ],
+  "paired_sample_wins": {
+    "R_LNO": 792,
+    "R_FNO": 693,
+    "Amplitude_LNO": 550,
+    "Amplitude_FNO": 935
+  },
+  "regime_wins": {
+    "R_LNO": 2,
+    "R_FNO": 3,
+    "Amplitude_LNO": 1,
+    "Amplitude_FNO": 4
+  },
+  "overall_winners": {
+    "R_accuracy": "FNO",
+    "Amplitude_accuracy": "LNO",
+    "Trace_preservation": "LNO"
+  },
+  "outputs": {
+    "overall": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step19_final_comparison/final_comparison.csv",
+    "relative_change": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step19_final_comparison/final_relative_change.csv",
+    "regime": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step19_final_comparison/final_regime_comparison.csv",
+    "paired": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step19_final_comparison/paired_test_comparison.csv",
+    "json": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step19_final_comparison/final_comparison.json"
+  }
+}

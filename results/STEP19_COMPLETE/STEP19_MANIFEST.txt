@@ -1,0 +1,17 @@
+STEP 19 — FINAL FNO vs FINAL REPAIRED LNO COMPARISON
+====================================================
+Fresh comparison using current final prediction artifacts.
+No model retraining.
+No checkpoint modification.
+No new model inference.
+
+Contents copied from:
+/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step19_final_comparison
+
+Main files:
+final_comparison.csv
+final_relative_change.csv
+final_regime_comparison.csv
+paired_test_comparison.csv
+final_comparison.json
+STEP19_MANIFEST.txt
