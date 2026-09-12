@@ -1,0 +1,24 @@
+STEP 28 — C-LNO LONG-HORIZON + REGIME STABILITY VALIDATION
+===========================================================
+
+Model:
+Step-26 C-LNO (R-focused + soft physics)
+
+Evaluation:
+25 representative test states
+5 representatives per regime
+100 rollout steps per state
+5 environment regimes
+
+Result:
+25/25 rollouts completed
+All values finite
+Zero meaningful PSD violations
+Trace error remained at numerical precision
+
+No model retraining performed.
+No checkpoint modified.
+No new ground-truth accuracy benchmark performed.
+
+Source directory:
+/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step28_c_lno_long_horizon

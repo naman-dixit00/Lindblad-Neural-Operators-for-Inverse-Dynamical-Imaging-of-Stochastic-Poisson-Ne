@@ -1,0 +1,97 @@
+{
+  "step": 28,
+  "title": "C-LNO Long-Horizon and Regime Stability Validation",
+  "diagnostic_type": "100-step structural stability diagnostic using the saved Step-26 C-LNO checkpoint.",
+  "ground_truth_accuracy_claim": false,
+  "training_performed": false,
+  "checkpoint_modified": false,
+  "representative_states": 25,
+  "representatives_per_regime": 5,
+  "rollout_steps": 100,
+  "global_summary": {
+    "model": "Step26_C_LNO",
+    "rollout_steps": 100,
+    "completed_states": 25,
+    "worst_minimum_eigenvalue": -3.133409336442128e-07,
+    "worst_max_trace_error": 1.1920928955078125e-07,
+    "worst_negative_eigenvalue_fraction": 0.0,
+    "max_R_norm": 11.313712120056152,
+    "min_R_norm": 8.39536190032959,
+    "max_amplitude_norm": 33.50436782836914,
+    "min_amplitude_norm": 2.127453565597534,
+    "all_finite": true
+  },
+  "regime_summary": [
+    {
+      "regime": "low_noise",
+      "model": "Step26_C_LNO",
+      "completed_steps": 100,
+      "worst_minimum_eigenvalue": -3.133409336442128e-07,
+      "worst_max_trace_error": 1.1920928955078125e-07,
+      "worst_psd_violation_fraction": 0.0,
+      "max_R_norm": 11.313712120056152,
+      "min_R_norm": 10.44554328918457,
+      "max_amplitude_norm": 33.28662872314453,
+      "min_amplitude_norm": 2.824784755706787,
+      "all_finite": true
+    },
+    {
+      "regime": "stochastic",
+      "model": "Step26_C_LNO",
+      "completed_steps": 100,
+      "worst_minimum_eigenvalue": -2.8114823180658277e-07,
+      "worst_max_trace_error": 1.1920928955078125e-07,
+      "worst_psd_violation_fraction": 0.0,
+      "max_R_norm": 10.449257850646973,
+      "min_R_norm": 8.545022964477539,
+      "max_amplitude_norm": 33.429752349853516,
+      "min_amplitude_norm": 2.2907238006591797,
+      "all_finite": true
+    },
+    {
+      "regime": "heavy_dissipation",
+      "model": "Step26_C_LNO",
+      "completed_steps": 100,
+      "worst_minimum_eigenvalue": -2.8498968163148675e-07,
+      "worst_max_trace_error": 1.1920928955078125e-07,
+      "worst_psd_violation_fraction": 0.0,
+      "max_R_norm": 11.260807991027832,
+      "min_R_norm": 9.632211685180664,
+      "max_amplitude_norm": 33.01670837402344,
+      "min_amplitude_norm": 2.9128000736236572,
+      "all_finite": true
+    },
+    {
+      "regime": "collapse",
+      "model": "Step26_C_LNO",
+      "completed_steps": 100,
+      "worst_minimum_eigenvalue": -2.938970737886848e-07,
+      "worst_max_trace_error": 1.1920928955078125e-07,
+      "worst_psd_violation_fraction": 0.0,
+      "max_R_norm": 9.944439888000488,
+      "min_R_norm": 8.39536190032959,
+      "max_amplitude_norm": 33.50436782836914,
+      "min_amplitude_norm": 2.127453565597534,
+      "all_finite": true
+    },
+    {
+      "regime": "metastable",
+      "model": "Step26_C_LNO",
+      "completed_steps": 100,
+      "worst_minimum_eigenvalue": -2.9906377108090965e-07,
+      "worst_max_trace_error": 1.1920928955078125e-07,
+      "worst_psd_violation_fraction": 0.0,
+      "max_R_norm": 10.838797569274902,
+      "min_R_norm": 8.923375129699707,
+      "max_amplitude_norm": 32.88270950317383,
+      "min_amplitude_norm": 3.011960029602051,
+      "all_finite": true
+    }
+  ],
+  "outputs": {
+    "rollout_details": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step28_c_lno_long_horizon/c_lno_rollout_details.csv",
+    "global_summary": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step28_c_lno_long_horizon/c_lno_global_summary.csv",
+    "regime_summary": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step28_c_lno_long_horizon/c_lno_regime_summary.csv",
+    "summary_json": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step28_c_lno_long_horizon/step28_summary.json"
+  }
+}
