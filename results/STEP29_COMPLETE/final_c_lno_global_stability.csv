@@ -1,0 +1,2 @@
+model,rollout_steps,completed_states,worst_minimum_eigenvalue,worst_max_trace_error,worst_negative_eigenvalue_fraction,max_R_norm,min_R_norm,max_amplitude_norm,min_amplitude_norm,all_finite
+Step26_C_LNO,100,25,-3.133409336442128e-07,1.1920928955078125e-07,0.0,11.313712120056152,8.39536190032959,33.50436782836914,2.127453565597534,True
