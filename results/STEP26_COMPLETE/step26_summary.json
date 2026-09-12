@@ -1,0 +1,78 @@
+{
+  "step": 26,
+  "title": "R Accuracy Improvement Ablation",
+  "scientific_question": "Whether LNO one-step R accuracy can be improved by aligning the training objective more closely with the R evaluation metric and softly restraining Lindblad coupling.",
+  "dataset": "Dataset V3 Expanded",
+  "split": {
+    "train": 6930,
+    "validation": 1485,
+    "test": 1485
+  },
+  "variants": [
+    "A_baseline",
+    "B_R_focused",
+    "C_R_focused_soft_physics"
+  ],
+  "no_existing_checkpoint_modified": true,
+  "fresh_initialization": true,
+  "results": [
+    {
+      "variant": "A_baseline",
+      "best_epoch": 10,
+      "best_val_loss": 0.09518930163823996,
+      "R_MSE": 0.007691658567637205,
+      "R_RMSE": 0.08770210127264458,
+      "R_Relative_L2": 0.526243269443512,
+      "Amplitude_MSE": 0.07072079181671143,
+      "Amplitude_RMSE": 0.2659338109694054,
+      "Amplitude_Relative_L2": 0.28637638688087463,
+      "Mean_trace_error": 9.619276930550313e-09,
+      "Max_trace_error": 1.1920928955078125e-07,
+      "Minimum_eigenvalue": -3.162564325975836e-07,
+      "Negative_eigenvalue_fraction": 0.0,
+      "kappa_lindblad": 0.7242858409881592,
+      "kappa_neural": 1.8759915828704834,
+      "R_Relative_L2_change_vs_A_percent": 0.0
+    },
+    {
+      "variant": "B_R_focused",
+      "best_epoch": 16,
+      "best_val_loss": 0.21467966881866005,
+      "R_MSE": 0.007170474156737328,
+      "R_RMSE": 0.08467865230822541,
+      "R_Relative_L2": 0.5081048607826233,
+      "Amplitude_MSE": 0.07369674742221832,
+      "Amplitude_RMSE": 0.27147144863174527,
+      "Amplitude_Relative_L2": 0.292339563369751,
+      "Mean_trace_error": 1.0142636064358612e-08,
+      "Max_trace_error": 1.1920928955078125e-07,
+      "Minimum_eigenvalue": -3.7339742675612797e-07,
+      "Negative_eigenvalue_fraction": 0.0,
+      "kappa_lindblad": 0.6709910035133362,
+      "kappa_neural": 2.0161213874816895,
+      "R_Relative_L2_change_vs_A_percent": -3.4467725696652707
+    },
+    {
+      "variant": "C_R_focused_soft_physics",
+      "best_epoch": 16,
+      "best_val_loss": 0.21403601500723096,
+      "R_MSE": 0.0071594552136957645,
+      "R_RMSE": 0.08461356400539907,
+      "R_Relative_L2": 0.5077136158943176,
+      "Amplitude_MSE": 0.07242956012487411,
+      "Amplitude_RMSE": 0.2691274050052765,
+      "Amplitude_Relative_L2": 0.28981542587280273,
+      "Mean_trace_error": 9.937556555428273e-09,
+      "Max_trace_error": 1.1920928955078125e-07,
+      "Minimum_eigenvalue": -3.2147488582268124e-07,
+      "Negative_eigenvalue_fraction": 0.0,
+      "kappa_lindblad": 0.33725330233573914,
+      "kappa_neural": 1.989941120147705,
+      "R_Relative_L2_change_vs_A_percent": -3.52111934254075
+    }
+  ],
+  "outputs": {
+    "comparison_csv": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step26_r_accuracy_ablation/step26_variant_comparison.csv",
+    "R_delta_csv": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step26_r_accuracy_ablation/step26_R_accuracy_delta.csv"
+  }
+}

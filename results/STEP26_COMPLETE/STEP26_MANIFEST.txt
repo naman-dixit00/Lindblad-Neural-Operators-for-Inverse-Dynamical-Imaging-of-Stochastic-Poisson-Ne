@@ -1,0 +1,20 @@
+STEP 26 — R ACCURACY IMPROVEMENT ABLATION
+==========================================
+
+Variants:
+A_baseline
+B_R_focused
+C_R_focused_soft_physics
+
+Purpose:
+Controlled fresh LNO training ablation to test whether the small
+R-accuracy gap versus FNO can be reduced through an R-focused
+objective and restrained Lindblad coupling.
+
+Dataset:
+Dataset V3 Expanded — 9,900 transitions
+
+Split:
+Train 6930 / Validation 1485 / Test 1485
+
+Existing final FNO/LNO checkpoints were not modified.
