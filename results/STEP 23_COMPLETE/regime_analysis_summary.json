@@ -1,0 +1,198 @@
+{
+  "step": 23,
+  "title": "Regime-Wise Long-Horizon Analysis",
+  "diagnostic_type": "Regime-wise repeated-forward stability and structural-preservation diagnostic.",
+  "ground_truth_accuracy_claim": false,
+  "representative_states": 25,
+  "representatives_per_regime": 5,
+  "rollout_steps": 100,
+  "regimes": [
+    "low_noise",
+    "stochastic",
+    "heavy_dissipation",
+    "collapse",
+    "metastable"
+  ],
+  "regime_advantage": [
+    {
+      "regime": "low_noise",
+      "LNO_structurally_better": true
+    },
+    {
+      "regime": "stochastic",
+      "LNO_structurally_better": true
+    },
+    {
+      "regime": "heavy_dissipation",
+      "LNO_structurally_better": true
+    },
+    {
+      "regime": "collapse",
+      "LNO_structurally_better": true
+    },
+    {
+      "regime": "metastable",
+      "LNO_structurally_better": true
+    }
+  ],
+  "FNO_vs_LNO_summary": [
+    {
+      "regime": "low_noise",
+      "model": "FNO",
+      "completed_steps": 100,
+      "worst_minimum_eigenvalue": -3052.16943359375,
+      "worst_max_trace_error": 1280.1636962890625,
+      "worst_psd_violation_fraction": 0.4520833194255829,
+      "max_R_norm": 36572.76171875,
+      "min_R_norm": 24.77704620361328,
+      "max_amplitude_norm": 117489.3046875,
+      "min_amplitude_norm": 21.627944946289062,
+      "all_finite": true
+    },
+    {
+      "regime": "low_noise",
+      "model": "LNO",
+      "completed_steps": 100,
+      "worst_minimum_eigenvalue": -2.834431995779596e-07,
+      "worst_max_trace_error": 1.1920928955078125e-07,
+      "worst_psd_violation_fraction": 0.0,
+      "max_R_norm": 25.117351531982422,
+      "min_R_norm": 23.78239631652832,
+      "max_amplitude_norm": 37.834529876708984,
+      "min_amplitude_norm": 21.0732479095459,
+      "all_finite": true
+    },
+    {
+      "regime": "stochastic",
+      "model": "FNO",
+      "completed_steps": 100,
+      "worst_minimum_eigenvalue": -54929.9609375,
+      "worst_max_trace_error": 23389.505859375,
+      "worst_psd_violation_fraction": 0.39531248807907104,
+      "max_R_norm": 688098.5625,
+      "min_R_norm": 19.160268783569336,
+      "max_amplitude_norm": 2287975.0,
+      "min_amplitude_norm": 17.885608673095703,
+      "all_finite": true
+    },
+    {
+      "regime": "stochastic",
+      "model": "LNO",
+      "completed_steps": 100,
+      "worst_minimum_eigenvalue": -2.7321596007823246e-07,
+      "worst_max_trace_error": 1.1920928955078125e-07,
+      "worst_psd_violation_fraction": 0.0,
+      "max_R_norm": 20.453414916992188,
+      "min_R_norm": 19.23185920715332,
+      "max_amplitude_norm": 36.691368103027344,
+      "min_amplitude_norm": 13.938872337341309,
+      "all_finite": true
+    },
+    {
+      "regime": "heavy_dissipation",
+      "model": "FNO",
+      "completed_steps": 100,
+      "worst_minimum_eigenvalue": -7367.24365234375,
+      "worst_max_trace_error": 3166.123046875,
+      "worst_psd_violation_fraction": 0.3929687440395355,
+      "max_R_norm": 90456.234375,
+      "min_R_norm": 22.48797607421875,
+      "max_amplitude_norm": 295226.8125,
+      "min_amplitude_norm": 21.069406509399414,
+      "all_finite": true
+    },
+    {
+      "regime": "heavy_dissipation",
+      "model": "LNO",
+      "completed_steps": 100,
+      "worst_minimum_eigenvalue": -3.360702010013483e-07,
+      "worst_max_trace_error": 1.1920928955078125e-07,
+      "worst_psd_violation_fraction": 0.0,
+      "max_R_norm": 23.192157745361328,
+      "min_R_norm": 21.98883056640625,
+      "max_amplitude_norm": 37.76589584350586,
+      "min_amplitude_norm": 20.63516616821289,
+      "all_finite": true
+    },
+    {
+      "regime": "collapse",
+      "model": "FNO",
+      "completed_steps": 100,
+      "worst_minimum_eigenvalue": -47460.65625,
+      "worst_max_trace_error": 21297.2421875,
+      "worst_psd_violation_fraction": 0.3916666805744171,
+      "max_R_norm": 619475.125,
+      "min_R_norm": 18.173192977905273,
+      "max_amplitude_norm": 2063608.625,
+      "min_amplitude_norm": 19.197513580322266,
+      "all_finite": true
+    },
+    {
+      "regime": "collapse",
+      "model": "LNO",
+      "completed_steps": 100,
+      "worst_minimum_eigenvalue": -2.5792380142775073e-07,
+      "worst_max_trace_error": 1.1920928955078125e-07,
+      "worst_psd_violation_fraction": 0.0,
+      "max_R_norm": 19.87203025817871,
+      "min_R_norm": 18.83902359008789,
+      "max_amplitude_norm": 36.82350540161133,
+      "min_amplitude_norm": 12.565596580505371,
+      "all_finite": true
+    },
+    {
+      "regime": "metastable",
+      "model": "FNO",
+      "completed_steps": 100,
+      "worst_minimum_eigenvalue": -49051.3984375,
+      "worst_max_trace_error": 21892.921875,
+      "worst_psd_violation_fraction": 0.4260416626930237,
+      "max_R_norm": 625618.875,
+      "min_R_norm": 20.922937393188477,
+      "max_amplitude_norm": 2080482.125,
+      "min_amplitude_norm": 20.414709091186523,
+      "all_finite": true
+    },
+    {
+      "regime": "metastable",
+      "model": "LNO",
+      "completed_steps": 100,
+      "worst_minimum_eigenvalue": -3.071423009259888e-07,
+      "worst_max_trace_error": 1.1920928955078125e-07,
+      "worst_psd_violation_fraction": 0.0,
+      "max_R_norm": 21.800268173217773,
+      "min_R_norm": 20.5301456451416,
+      "max_amplitude_norm": 36.977054595947266,
+      "min_amplitude_norm": 17.772920608520508,
+      "all_finite": true
+    }
+  ],
+  "outputs": {
+    "detail_csv": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step23_regime_analysis/regime_rollout_details.csv",
+    "summary_csv": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step23_regime_analysis/regime_long_horizon_summary.csv",
+    "advantage_csv": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step23_regime_analysis/regime_structural_advantage.csv",
+    "summary_json": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step23_regime_analysis/regime_analysis_summary.json",
+    "plots": [
+      "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step23_regime_analysis/regime_low_noise_R_norm.png",
+      "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step23_regime_analysis/regime_stochastic_R_norm.png",
+      "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step23_regime_analysis/regime_heavy_dissipation_R_norm.png",
+      "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step23_regime_analysis/regime_collapse_R_norm.png",
+      "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step23_regime_analysis/regime_metastable_R_norm.png",
+      "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step23_regime_analysis/regime_low_noise_trace_error.png",
+      "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step23_regime_analysis/regime_stochastic_trace_error.png",
+      "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step23_regime_analysis/regime_heavy_dissipation_trace_error.png",
+      "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step23_regime_analysis/regime_collapse_trace_error.png",
+      "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step23_regime_analysis/regime_metastable_trace_error.png",
+      "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step23_regime_analysis/regime_low_noise_minimum_eigenvalue.png",
+      "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step23_regime_analysis/regime_stochastic_minimum_eigenvalue.png",
+      "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step23_regime_analysis/regime_heavy_dissipation_minimum_eigenvalue.png",
+      "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step23_regime_analysis/regime_collapse_minimum_eigenvalue.png",
+      "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step23_regime_analysis/regime_metastable_minimum_eigenvalue.png",
+      "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step23_regime_analysis/regime_low_noise_amplitude_norm.png",
+      "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step23_regime_analysis/regime_stochastic_amplitude_norm.png",
+      "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step23_regime_analysis/regime_heavy_dissipation_amplitude_norm.png",
+      "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step23_regime_analysis/regime_collapse_amplitude_norm.png",
+      "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step23_regime_analysis/regime_metastable_amplitude_norm.png"
+    ]
+  }
+}

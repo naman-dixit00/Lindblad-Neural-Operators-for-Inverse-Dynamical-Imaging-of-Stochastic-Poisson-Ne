@@ -1,0 +1,6 @@
+regime,LNO_structurally_better
+low_noise,True
+stochastic,True
+heavy_dissipation,True
+collapse,True
+metastable,True
