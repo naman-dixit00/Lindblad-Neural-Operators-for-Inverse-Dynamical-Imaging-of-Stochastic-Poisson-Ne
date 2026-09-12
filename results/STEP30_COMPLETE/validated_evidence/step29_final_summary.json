@@ -1,0 +1,36 @@
+{
+  "step": 29,
+  "title": "Final C-LNO Comprehensive Evaluation",
+  "training_performed": false,
+  "checkpoint_modified": false,
+  "new_inference_performed": false,
+  "test_transitions": 1485,
+  "models": [
+    "FNO",
+    "Final_LNO",
+    "Step26_C_LNO"
+  ],
+  "accuracy": {
+    "R_winner": "Step26_C_LNO",
+    "Amplitude_winner": "Final_LNO",
+    "C_LNO_R_change_vs_FNO_percent": -1.7061522011513206,
+    "C_LNO_Amplitude_change_vs_FNO_percent": 0.9765164830105699,
+    "C_LNO_R_regime_wins_vs_FNO": 5,
+    "C_LNO_R_regime_wins_vs_Final_LNO": 5
+  },
+  "structure": {
+    "one_step_valid": true,
+    "long_horizon_finite": true,
+    "long_horizon_psd_stable": true,
+    "long_horizon_trace_stable": true,
+    "regime_wise_stability": true
+  },
+  "final_candidate": true,
+  "outputs": {
+    "accuracy": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step29_final_c_lno_evaluation/final_three_model_accuracy.csv",
+    "regime_accuracy": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step29_final_c_lno_evaluation/final_regime_accuracy.csv",
+    "regime_stability": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step29_final_c_lno_evaluation/final_c_lno_regime_stability.csv",
+    "global_stability": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step29_final_c_lno_evaluation/final_c_lno_global_stability.csv",
+    "summary_json": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step29_final_c_lno_evaluation/step29_final_summary.json"
+  }
+}
