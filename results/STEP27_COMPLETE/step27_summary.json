@@ -1,0 +1,109 @@
+{
+  "step": 27,
+  "title": "Independent Validation of Step-26 C-LNO",
+  "no_training": true,
+  "fresh_C_LNO_inference": true,
+  "test_transitions": 1485,
+  "models": [
+    "FNO",
+    "Final_LNO",
+    "Step26_C_LNO"
+  ],
+  "overall": [
+    {
+      "model": "FNO",
+      "R_RMSE": 0.08608100570051884,
+      "R_Relative_L2": 0.5165263414382935,
+      "Amplitude_RMSE": 0.4143533045352371,
+      "Amplitude_Relative_L2": 0.17607641220092773,
+      "Mean_trace_error": 0.011498193256556988,
+      "Max_trace_error": 0.1505589485168457,
+      "Minimum_eigenvalue": -0.7177095413208008,
+      "Negative_eigenvalue_fraction": 0.34078457951545715
+    },
+    {
+      "model": "Final_LNO",
+      "R_RMSE": 0.08692437282229164,
+      "R_Relative_L2": 0.5215809941291809,
+      "Amplitude_RMSE": 0.41349579158680205,
+      "Amplitude_Relative_L2": 0.17571207880973816,
+      "Mean_trace_error": 2.837993839932551e-08,
+      "Max_trace_error": 2.384185791015625e-07,
+      "Minimum_eigenvalue": -3.2853321840775607e-07,
+      "Negative_eigenvalue_fraction": 0.0
+    },
+    {
+      "model": "Step26_C_LNO",
+      "R_RMSE": 0.08461356400539907,
+      "R_Relative_L2": 0.5077136158943176,
+      "Amplitude_RMSE": 0.4183994640871613,
+      "Amplitude_Relative_L2": 0.17779582738876343,
+      "Mean_trace_error": 9.937556555428273e-09,
+      "Max_trace_error": 1.1920928955078125e-07,
+      "Minimum_eigenvalue": -3.2147488582268124e-07,
+      "Negative_eigenvalue_fraction": 0.0
+    }
+  ],
+  "regimes": [
+    {
+      "regime": "low_noise",
+      "transitions": 297,
+      "R_Relative_L2_FNO": 0.15552622079849243,
+      "R_Relative_L2_Final_LNO": 0.1420385092496872,
+      "R_Relative_L2_C_LNO": 0.10086528211832047,
+      "Amplitude_Relative_L2_FNO": 0.030189452692866325,
+      "Amplitude_Relative_L2_Final_LNO": 0.04080768674612045,
+      "Amplitude_Relative_L2_C_LNO": 0.03362204134464264,
+      "C_LNO_R_better_than_FNO": true,
+      "C_LNO_R_better_than_Final_LNO": true
+    },
+    {
+      "regime": "stochastic",
+      "transitions": 297,
+      "R_Relative_L2_FNO": 0.6222813129425049,
+      "R_Relative_L2_Final_LNO": 0.6385464072227478,
+      "R_Relative_L2_C_LNO": 0.615386426448822,
+      "Amplitude_Relative_L2_FNO": 0.1910804808139801,
+      "Amplitude_Relative_L2_Final_LNO": 0.1911165714263916,
+      "Amplitude_Relative_L2_C_LNO": 0.1911882609128952,
+      "C_LNO_R_better_than_FNO": true,
+      "C_LNO_R_better_than_Final_LNO": true
+    },
+    {
+      "regime": "heavy_dissipation",
+      "transitions": 297,
+      "R_Relative_L2_FNO": 0.4147300124168396,
+      "R_Relative_L2_Final_LNO": 0.41859865188598633,
+      "R_Relative_L2_C_LNO": 0.4035600423812866,
+      "Amplitude_Relative_L2_FNO": 0.049969784915447235,
+      "Amplitude_Relative_L2_Final_LNO": 0.05671903118491173,
+      "Amplitude_Relative_L2_C_LNO": 0.051741790026426315,
+      "C_LNO_R_better_than_FNO": true,
+      "C_LNO_R_better_than_Final_LNO": true
+    },
+    {
+      "regime": "collapse",
+      "transitions": 297,
+      "R_Relative_L2_FNO": 0.663486897945404,
+      "R_Relative_L2_Final_LNO": 0.6619823575019836,
+      "R_Relative_L2_C_LNO": 0.6591235995292664,
+      "Amplitude_Relative_L2_FNO": 0.27615365386009216,
+      "Amplitude_Relative_L2_Final_LNO": 0.2728930413722992,
+      "Amplitude_Relative_L2_C_LNO": 0.2789204716682434,
+      "C_LNO_R_better_than_FNO": true,
+      "C_LNO_R_better_than_Final_LNO": true
+    },
+    {
+      "regime": "metastable",
+      "transitions": 297,
+      "R_Relative_L2_FNO": 0.5569154620170593,
+      "R_Relative_L2_Final_LNO": 0.5644978880882263,
+      "R_Relative_L2_C_LNO": 0.5499855875968933,
+      "Amplitude_Relative_L2_FNO": 0.11853055655956268,
+      "Amplitude_Relative_L2_Final_LNO": 0.12056730687618256,
+      "Amplitude_Relative_L2_C_LNO": 0.12138280272483826,
+      "C_LNO_R_better_than_FNO": true,
+      "C_LNO_R_better_than_Final_LNO": true
+    }
+  ]
+}

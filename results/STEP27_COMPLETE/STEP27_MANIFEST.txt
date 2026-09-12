@@ -1,0 +1,22 @@
+STEP 27 — INDEPENDENT VALIDATION OF STEP-26 C-LNO
+=================================================
+
+Compared models:
+1. Final FNO (Step 17)
+2. Original Final LNO (Step 18)
+3. Step-26 C-LNO (R-focused + soft physics)
+
+Test set:
+1,485 identical test transitions
+
+No model retraining performed.
+C-LNO evaluated from the saved Step-26 checkpoint.
+FNO and original Final LNO use their existing final predictions.
+
+Main result:
+C-LNO R Relative-L2 = 0.507714
+FNO R Relative-L2 = 0.516526
+C-LNO improvement vs FNO ≈ 1.71%
+
+C-LNO is better than FNO in R Relative-L2 across all 5 tested regimes.
+Structural preservation remains numerically strong.
