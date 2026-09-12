@@ -1,0 +1,43 @@
+{
+  "step": 30,
+  "title": "IEEE / Journal Quality Publication Visualization Package",
+  "training_performed": false,
+  "new_model_inference": false,
+  "checkpoint_modified": false,
+  "evidence_sources": [
+    "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step27_c_lno_independent_validation",
+    "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step28_c_lno_long_horizon",
+    "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step29_final_c_lno_evaluation"
+  ],
+  "core_figures": [
+    "01_overall_accuracy",
+    "02_regime_wise_R_accuracy",
+    "03_structural_preservation",
+    "04_C_LNO_100step_trace_stability",
+    "05_C_LNO_100step_PSD_stability",
+    "06_C_LNO_R_norm_stability",
+    "07_regime_structural_stability",
+    "08_final_paper_summary"
+  ],
+  "three_d_figures": [
+    "09_3D_C_LNO_R_norm_stability",
+    "10_3D_R_matrix_structure"
+  ],
+  "architecture": [
+    "11_LNO_architecture_publication"
+  ],
+  "gifs": [
+    "12_LNO_architecture_working.gif",
+    "13_C_LNO_3D_R_norm_evolution.gif"
+  ],
+  "aspect_ratios": [
+    "square",
+    "two_column",
+    "wide"
+  ],
+  "formats": [
+    "PNG_600DPI",
+    "SVG",
+    "PDF"
+  ]
+}
