@@ -1,0 +1,19 @@
+STEP 25 — FINAL COMPARATIVE EVIDENCE CONSOLIDATION
+==================================================
+
+Purpose:
+Consolidate previously computed final evidence from Steps 19, 22, 23, and 24.
+
+No model retraining performed.
+No checkpoint modification performed.
+No new model inference performed.
+No new ground-truth accuracy benchmark performed.
+
+Evidence sources:
+- Step 19: Final FNO vs repaired LNO one-step accuracy + structural comparison
+- Step 22: Global 100-step long-horizon stability
+- Step 23: Regime-wise 100-step structural stability
+- Step 24: Stability visualization / completeness verification
+
+Source directory:
+/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step25_final_comparative_evidence

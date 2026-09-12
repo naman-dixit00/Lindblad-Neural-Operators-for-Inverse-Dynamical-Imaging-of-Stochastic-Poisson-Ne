@@ -1,0 +1,10 @@
+evidence_category,FNO_value,LNO_value,interpretation
+One-step R accuracy,0.51648602,0.52154625,Lower Relative-L2 is better.
+One-step amplitude accuracy,0.17607665,0.17571226,Lower Relative-L2 is better.
+One-step structural trace error,0.01149819,2.838e-08,Lower trace error is better.
+One-step minimum eigenvalue,-0.7177095,-3.285e-07,Higher minimum eigenvalue is better.
+One-step meaningful PSD violation fraction,0.340796,0.183762,Lower meaningful violation fraction is better.
+100-step rollout completion,100.0,100.0,Both completed the requested rollout.
+100-step worst trace error,23389.328125,1.1920928955078125e-07,Lower is better.
+100-step worst minimum eigenvalue,-54929.453125,-2.8635551529987424e-07,Higher is better.
+100-step worst PSD violation,0.4084374904632568,0.0,Lower is better.

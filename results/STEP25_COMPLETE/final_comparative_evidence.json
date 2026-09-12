@@ -1,0 +1,78 @@
+{
+  "step": 25,
+  "title": "Final Comparative Evidence Consolidation",
+  "diagnostic_type": "Consolidation of independently computed accuracy, structural, and long-horizon evidence from Steps 19-24.",
+  "ground_truth_accuracy_claim": false,
+  "no_retraining": true,
+  "no_checkpoint_modification": true,
+  "new_model_inference": false,
+  "one_step_accuracy": [
+    {
+      "model": "FNO",
+      "R_RMSE": 0.0860810036,
+      "R_Relative_L2": 0.51648602,
+      "Amplitude_RMSE": 0.4143533045,
+      "Amplitude_Relative_L2": 0.17607665
+    },
+    {
+      "model": "LNO",
+      "R_RMSE": 0.0869243741,
+      "R_Relative_L2": 0.52154625,
+      "Amplitude_RMSE": 0.413495779,
+      "Amplitude_Relative_L2": 0.17571226
+    }
+  ],
+  "one_step_structural": [
+    {
+      "model": "FNO",
+      "test_mean_trace_error": 0.01149819,
+      "test_minimum_eigenvalue": -0.7177095,
+      "test_negative_eigenvalue_fraction": 0.340796
+    },
+    {
+      "model": "LNO",
+      "test_mean_trace_error": 2.838e-08,
+      "test_minimum_eigenvalue": -3.285e-07,
+      "test_negative_eigenvalue_fraction": 0.183762
+    }
+  ],
+  "global_long_horizon": [
+    {
+      "model": "FNO",
+      "rollout_steps": 100,
+      "worst_minimum_eigenvalue": -54929.453125,
+      "worst_max_trace_error": 23389.328125,
+      "worst_negative_eigenvalue_fraction": 0.4084374904632568,
+      "max_R_norm": 1121672.0,
+      "min_R_norm": 47.81871795654297,
+      "max_amplitude_norm": 3731312.75,
+      "min_amplitude_norm": 46.61872100830078,
+      "all_finite": true
+    },
+    {
+      "model": "LNO",
+      "rollout_steps": 100,
+      "worst_minimum_eigenvalue": -2.8635551529987424e-07,
+      "worst_max_trace_error": 1.1920928955078125e-07,
+      "worst_negative_eigenvalue_fraction": 0.0,
+      "max_R_norm": 49.41068649291992,
+      "min_R_norm": 47.114707946777344,
+      "max_amplitude_norm": 83.23006439208984,
+      "min_amplitude_norm": 41.1758918762207,
+      "all_finite": true
+    }
+  ],
+  "regime_advantage_count": 5,
+  "regime_total": 5,
+  "all_regimes_structurally_better": true,
+  "outputs": {
+    "accuracy": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step25_final_comparative_evidence/final_accuracy_comparison.csv",
+    "accuracy_relative_change": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step25_final_comparative_evidence/accuracy_relative_change.csv",
+    "structural": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step25_final_comparative_evidence/final_structural_comparison.csv",
+    "long_horizon": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step25_final_comparative_evidence/final_long_horizon_comparison.csv",
+    "regime_stability": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step25_final_comparative_evidence/final_regime_stability_comparison.csv",
+    "regime_advantage": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step25_final_comparative_evidence/regime_structural_advantage.csv",
+    "final_evidence": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step25_final_comparative_evidence/final_evidence_summary.csv",
+    "summary": "/content/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/results/step25_final_comparative_evidence/final_comparative_evidence.json"
+  }
+}
