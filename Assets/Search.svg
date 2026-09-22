@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="46" viewBox="0 0 420 46" fill="none">
+  <defs>
+    <!-- Ultra-Transparent Sheer Glass Background Gradient -->
+    <linearGradient id="ultra-trans-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.20"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.02"/>
+    </linearGradient>
+
+    <!-- Subtle Sheer Rim Border -->
+    <linearGradient id="sheer-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#C084FC" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#60A5FA" stop-opacity="0.22"/>
+    </linearGradient>
+
+    <!-- Minimal Soft Shadow -->
+    <filter id="ultra-sheer-shadow" x="-8%" y="-15%" width="116%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000000" flood-opacity="0.04"/>
+    </filter>
+  </defs>
+
+  <!-- Main Sheer Transparent Pill Container -->
+  <rect x="2" y="2" width="416" height="42" rx="21" fill="url(#ultra-trans-bg)" stroke="url(#sheer-border)" stroke-width="1" filter="url(#ultra-sheer-shadow)"/>
+
+  <!-- Top Edge Light Reflection -->
+  <path d="M 23 3 Q 210 3 397 3" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="0.8" stroke-linecap="round"/>
+
+  <!-- Left Search Lens Icon -->
+  <g transform="translate(18, 14)" stroke="#334155" stroke-width="1.8" stroke-linecap="round" fill="none">
+    <circle cx="7" cy="7" r="5.5"/>
+    <path d="M11 11L15 15"/>
+  </g>
+
+  <!-- Search Placeholder Text -->
+  <text x="48" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#1E293B" letter-spacing="0.2">Ask DeepWiki AI to search repo...</text>
+
+  <!-- Right Direct Black DeepWiki Emblem -->
+  <g transform="translate(378, 13)" fill="#09090B">
+    <!-- Top Node -->
+    <circle cx="9" cy="3.5" r="3.2"/>
+    <!-- Bottom Left Node -->
+    <circle cx="3.8" cy="12.5" r="3.2"/>
+    <!-- Bottom Right Node -->
+    <circle cx="14.2" cy="12.5" r="3.2"/>
+    <!-- Center Core Union -->
+    <circle cx="9" cy="9.2" r="2.4"/>
+    <path d="M 9 3.5 L 3.8 12.5 L 14.2 12.5 Z" fill="#09090B"/>
+  </g>
+</svg>
