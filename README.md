@@ -5,8 +5,9 @@
 <em>Physics-Informed Neural Operators for Inverse Computational Imaging</em>
 
 <br/>
+<br/>
 
-<!-- Harvard Dataverse DOI Badge (Using Assets SVG) -->
+<!-- Harvard Dataverse DOI Badge -->
 <p align="center">
   <a href="https://doi.org/10.7910/DVN/IUMEDG" target="_blank">
     <img src="Assets/gemini-svg%20(1).svg" height="48" alt="Harvard Dataverse DOI Badge" />
@@ -17,8 +18,8 @@
 
 <!-- Badges Row 1 -->
 <p align="center">
-  <a href="https://deepwiki.com/naman-dixit00/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne">
-    <img src="https://deepwiki.com/badge.svg" height="42" alt="Ask DeepWiki" />
+  <a href="https://github.com/naman-dixit00/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne/network/members">
+    <img src="https://img.shields.io/github/forks/naman-dixit00/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne?style=flat&logo=github&logoColor=181717&labelColor=f1f5f9&color=10b981" height="42" alt="Forks"/>
   </a>
   <a href="https://github.com/naman-dixit00/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne">
     <img src="https://img.shields.io/badge/GitHub-Repository-2563eb?style=flat&logo=github&logoColor=181717&labelColor=f1f5f9" height="42" alt="GitHub Repo"/>
