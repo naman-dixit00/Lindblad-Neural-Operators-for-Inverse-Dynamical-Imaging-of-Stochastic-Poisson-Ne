@@ -7,6 +7,13 @@
 <br/>
 <br/>
 
+<!-- Sheer Transparent DeepWiki Search Bar -->
+<p align="center">
+  <a href="https://deepwiki.com/naman-dixit00/Lindblad-Neural-Operators-for-Inverse-Dynamical-Imaging-of-Stochastic-Poisson-Ne" target="_blank">
+    <img src="Assets/deepwiki-search.svg" height="46" alt="Ask DeepWiki AI Search" />
+  </a>
+</p>
+
 <!-- Harvard Dataverse DOI Badge -->
 <p align="center">
   <a href="https://doi.org/10.7910/DVN/IUMEDG" target="_blank">
